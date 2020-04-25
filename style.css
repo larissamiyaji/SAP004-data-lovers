@@ -3,6 +3,7 @@ html{
     background-size: 100%;
     background-repeat: inherit;
     font-family: 'Girassol';
+    cursor: url(cursor-lol.cur), auto;
 }
 header{
     background: #ffffff3d;
@@ -27,6 +28,7 @@ header{
 .menu li {
     display: inline-block;
     width: 150px;
+    cursor: url(cursor-lol.cur), auto;
 }
 .about-the-game-button, .characters-button, .youtube-button, .compare-button{
     border-radius: 3px;
@@ -34,6 +36,7 @@ header{
     font-size: 25px;
     font-family: 'Girassol';
     border: solid 1px black;
+    cursor: url(cursor-lol.cur), auto;
 }
 .introduction-site{
     text-align: center;
