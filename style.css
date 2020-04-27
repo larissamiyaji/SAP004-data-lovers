@@ -18,6 +18,7 @@ header{
 a{
     color: black;
     text-decoration: none;
+    cursor: url('cursor-lol.cur'), default;
 }
 .menu ul {
     padding:0px;
