@@ -44,7 +44,7 @@ h1{
     border: solid 1px black;
     cursor: url('cursor-lol.cur'), default;
 }
-.introduction-site, .introduction-game, .youtubers-list, .characters-list{
+.introduction-site, .introduction-game, .youtubers-list, .characters-list, .compare-characters{
     text-align: center;
     font-size: 40px;
     color: bold;
@@ -136,14 +136,15 @@ h1{
     .about-the-game-button, .characters-button, .youtube-button, .compare-button{
         border-radius: 3px;
         background-color: #bda275;
-        font-size: 25px;
+        font-size: 20px;
         font-family: 'Girassol';
         border: solid 1px black;
     }
-    .introduction-site, .introduction-game, .youtubers-list, .characters-list{
+    .introduction-site, .introduction-game, .youtubers-list, .characters-list, .compare-characters{
         text-align: center;
-        font-size: 25px;
+        font-size: 20px;
         background: #ffffff3d;
+        background: #bda275c7;
     }
     /*.introduction-game{
         margin-top: 10%;
