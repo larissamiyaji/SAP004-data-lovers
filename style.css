@@ -69,15 +69,40 @@ h1{
 .characters-list{
     text-align: left;
     font-size: ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.characters-list > div{
+    margin: 10px;
+    align-items: center;
 }
 .champions-list{
     display: inline;
     margin-right: 10px;
 }
+.champions-card{
+    display: inline-block;
+    border-style: groove;
+    border-width: 4px;
+    border-color: #34dce8;
+    background: #fbd27361;
+    width: 395px;
+}
 img:hover{
     transform: scale(1.5);
     cursor: pointer;
     cursor: url('cursor-lol.cur'), default;
+}
+.image, .name, .title, .role{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.image, .name, .title{
+    text-align: center;
+}
+.image{
+    align-items: center;
+    padding-top: 10px;
 }
 .made-by{
     text-align: center;

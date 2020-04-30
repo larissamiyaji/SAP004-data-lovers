@@ -40,20 +40,15 @@ function showChampions() {
 
   for (let persona in champion) {
     document.getElementById("see-characters-here").innerHTML += `
-    <hr>
     <div class="champions-card">
-    <img src="${champion[persona].img}"> <br>
-    Name: ${persona} <br>    
-    ${champion[persona].title} <br>
-    Role: ${champion[persona].tags} <br>
+    <p class="image"><img src="${champion[persona].img}"><p/>
+    <p class="name">Name: ${persona}</p>  
+    <p class="title">${champion[persona].title}</p>
+    <p class="role">Role: ${champion[persona].tags}</p>
     </div>
-    <hr>
     `;
   }
 } 
-var texto = document.getElementById("aba-per").innerHTML;
-texto = texto.replace("→", "<br/>");
-
 function showAboutGame() {
   charactersDiv.style.visibility = "hidden";
   charactersDiv.style.display = "none";
