@@ -20,6 +20,8 @@ const aboutTheGameDiv = document.getElementById("about-the-game-div");
 const compareChampion = document.getElementById("compare-champions");
 const youtubeMedia = document.getElementById("youtube-media");
 // DECLAREI VARIÁVEIS PARA OS BOTÕES PARA FICAR MAIS FÁCIL DE TRABALHAR, AO INVÉS DE SEMPRE CHAMAR COM getElementeById
+const champion = data.data;
+
 function showChampions() {
   charactersDiv.style.visibility = "visible";
   charactersDiv.style.display = "block";
@@ -36,14 +38,14 @@ function showChampions() {
   youtubeMedia.style.visibility = "hidden";
   youtubeMedia.style.display = "none";
 
-  for (let persona in data.data) {
+  for (let persona in champion) {
     document.getElementById("see-characters-here").innerHTML += `
     <hr>
-    <div>
-    <img src="${data.data[persona].img}"> <br>
+    <div class="champions-card">
+    <img src="${champion[persona].img}"> <br>
     Name: ${persona} <br>    
-    ${data.data[persona].title} <br>
-    Role: ${data.data[persona].tags} <br>
+    ${champion[persona].title} <br>
+    Role: ${champion[persona].tags} <br>
     </div>
     <hr>
     `;

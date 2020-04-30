@@ -70,6 +70,10 @@ h1{
     text-align: left;
     font-size: ;
 }
+.champions-list{
+    display: inline;
+    margin-right: 10px;
+}
 img:hover{
     transform: scale(1.5);
     cursor: pointer;
@@ -83,7 +87,6 @@ img:hover{
     border-radius: 10px;
     background: #ffffff3d;
 }
-
 .insivible-class{
     visibility: hidden;
     display: none;
