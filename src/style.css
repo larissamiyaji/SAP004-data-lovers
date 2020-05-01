@@ -20,9 +20,10 @@ header{
     border-style: ridge;
     border-width: 5px;
     border-radius: 20px;
-    border-color: #97723d;
 }
-
+a{
+    text-decoration: none;
+}
 .menu ul {
     padding:0px;
     padding-bottom: 10px;
@@ -65,27 +66,29 @@ h1{
     background: #bda275c7;
 }
 
-.characters-list{
+/*.characters-list{
     text-align: left;
     font-size: ;
     display: flex;
     flex-wrap: wrap;
-}
-.characters-list > div{
+}*/
+/*.characters-list > div{
     margin: 10px;
     align-items: center;
-}
-.champions-list{
+}*/
+/*.champions-list{
     display: inline;
     margin-right: 10px;
-}
+}*/
 .champions-card{
     display: inline-block;
     border-style: groove;
     border-width: 4px;
     border-color: #34dce8;
     background: #fbd27361;
-    width: 395px;
+    width: 600px;
+    height: 220px;
+    /*margin-bottom: 10px;*/
 }
 img:hover{
     transform: scale(1.5);
@@ -156,29 +159,6 @@ img:hover{
         margin-top: 0px;
         font-size: 30px;
     }
-    .characters-list{
-        text-align: left;
-        font-size: ;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .characters-list > div{
-        margin: 10px;
-        align-items: center;
-    }
-    .champions-list{
-        display: inline;
-        margin-right: 10px;
-    }
-    .champions-card{
-        display: inline-block;
-        margin-bottom: 10px;
-        border-style: groove;
-        border-width: 4px;
-        border-color: #34dce8;
-        background: #fbd27361;
-        width: 95%;
-    }
     .about-the-game-button, .characters-button, .youtube-button, .compare-button{
         border-radius: 3px;
         background-color: #bda275;
@@ -191,12 +171,29 @@ img:hover{
         font-size: 20px;
 
     }
-    .characters-list{
+    .champions-card{
+        display: inline-block;
+        border-style: groove;
+        border-width: 4px;
+        border-color: #34dce8;
+        background: #fbd27361;
+        width: 95%;
+        height: 290px;
+        margin-bottom: 10px;
+        /*margin-bottom: 10px;*/
+    }
+    /*.characters-list{
         text-align: left;
         font-size: 20px;
-
         background: #ffffff3d;
         background: #bda275c7;
+    }*/
+    .made-by{
+        text-align: center;
+        bottom: 0;
+        position: end;
+        width: 100%;
+        background: #ffffff3d;
     }
     .made-by{
         text-align: center;
@@ -205,4 +202,4 @@ img:hover{
         width: 100%;
         background: #ffffff3d;
     }
-
+}
