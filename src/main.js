@@ -20,7 +20,7 @@ const aboutTheGameDiv = document.getElementById("about-the-game-div");
 const compareChampion = document.getElementById("compare-champions");
 const youtubeMedia = document.getElementById("youtube-media");
 
-var champion = data.data;
+const champion = data.data;
 
 
 function showChampions() {
@@ -125,7 +125,7 @@ function sortCharacters(event) {
       document.getElementById("see-characters-sort-here-ZA").style.display = "none";
       
       let arrayPersonas = [];
-      for (let persona in data.data){    
+      for (let persona in champion){    
       arrayPersonas.push(persona);   
       };
 
@@ -144,7 +144,7 @@ function sortCharacters(event) {
       `;
       };
       
-    }else if(event.target.value == "ZA"){
+    } else if (event.target.value == "ZA"){
 
       document.getElementById("see-characters-here").style.visibility = "hidden"; 
       document.getElementById("see-characters-here").style.display = "none";
@@ -153,7 +153,7 @@ function sortCharacters(event) {
       document.getElementById("see-characters-sort-here-AZ").style.display = "none";
 
       let arrayPersonas = [];
-      for (let persona in data.data){    
+      for (let persona in champion){    
       arrayPersonas.push(persona);   
       };
 
