@@ -22,9 +22,7 @@ header{
     border-radius: 20px;
     border-color: #97723d;
 }
-a{
-    text-decoration: none;
-}
+
 .menu ul {
     padding:0px;
     padding-bottom: 10px;
@@ -66,6 +64,7 @@ h1{
     border-color: #97723d;
     background: #bda275c7;
 }
+
 .characters-list{
     text-align: left;
     font-size: ;
@@ -117,6 +116,8 @@ img:hover{
     display: none;
 }
 
+
+
 /*VERSÃO MOBILE*/
 @media only screen and (max-width: 800px){
     html{
@@ -165,10 +166,17 @@ img:hover{
     .introduction-site, .introduction-game, .youtubers-list, .characters-list, .compare-characters{
         text-align: center;
         font-size: 20px;
+
     }
     .characters-list{
         text-align: left;
         font-size: 20px;
+
+        background: #ffffff3d;
+        background: #bda275c7;
+    }
+    
+  
     }
     .made-by{
         text-align: center;
@@ -177,4 +185,4 @@ img:hover{
         width: 100%;
         background: #ffffff3d;
     }
-}
+
