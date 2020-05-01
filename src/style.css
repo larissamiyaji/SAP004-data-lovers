@@ -156,6 +156,29 @@ img:hover{
         margin-top: 0px;
         font-size: 30px;
     }
+    .characters-list{
+        text-align: left;
+        font-size: ;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .characters-list > div{
+        margin: 10px;
+        align-items: center;
+    }
+    .champions-list{
+        display: inline;
+        margin-right: 10px;
+    }
+    .champions-card{
+        display: inline-block;
+        margin-bottom: 10px;
+        border-style: groove;
+        border-width: 4px;
+        border-color: #34dce8;
+        background: #fbd27361;
+        width: 95%;
+    }
     .about-the-game-button, .characters-button, .youtube-button, .compare-button{
         border-radius: 3px;
         background-color: #bda275;
@@ -174,9 +197,6 @@ img:hover{
 
         background: #ffffff3d;
         background: #bda275c7;
-    }
-    
-  
     }
     .made-by{
         text-align: center;
