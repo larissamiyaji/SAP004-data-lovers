@@ -20,7 +20,7 @@ const aboutTheGameDiv = document.getElementById("about-the-game-div");
 const compareChampion = document.getElementById("compare-champions");
 const youtubeMedia = document.getElementById("youtube-media");
 
-const champion = data.data;
+var champion = data.data;
 
 
 function showChampions() {
@@ -109,23 +109,24 @@ function showYoutubers() {
   youtubeMedia.style.display = "block";
 };
 
+document.getElementById("send-ordination").addEventListener("click", sortCharacters);
 
-const selectElement = document.getElementById("sort-characters");
-
-selectElement.addEventListener("change", sortCharacters);
     
 function sortCharacters(event) {
 
-    if (event.target.value == "AZ"){
+    if (document.getElementById("AZ").checked){
 
       document.getElementById("see-characters-here").style.visibility = "hidden"; 
       document.getElementById("see-characters-here").style.display = "none";
       
       document.getElementById("see-characters-sort-here-ZA").style.visibility = "hidden"; 
       document.getElementById("see-characters-sort-here-ZA").style.display = "none";
+
+      document.getElementById("see-characters-sort-here-AZ").style.visibility = "visible"; 
+      document.getElementById("see-characters-sort-here-AZ").style.display = "block"; 
       
       let arrayPersonas = [];
-      for (let persona in champion){    
+      for (let persona in data.data){    
       arrayPersonas.push(persona);   
       };
 
@@ -144,7 +145,7 @@ function sortCharacters(event) {
       `;
       };
       
-    } else if (event.target.value == "ZA"){
+    }else if(document.getElementById("ZA").checked){
 
       document.getElementById("see-characters-here").style.visibility = "hidden"; 
       document.getElementById("see-characters-here").style.display = "none";
@@ -152,8 +153,11 @@ function sortCharacters(event) {
       document.getElementById("see-characters-sort-here-AZ").style.visibility = "hidden"; 
       document.getElementById("see-characters-sort-here-AZ").style.display = "none";
 
+      document.getElementById("see-characters-sort-here-ZA").style.visibility = "visible";  
+      document.getElementById("see-characters-sort-here-ZA").style.display = "block"; 
+
       let arrayPersonas = [];
-      for (let persona in champion){    
+      for (let persona in data.data){    
       arrayPersonas.push(persona);   
       };
 
