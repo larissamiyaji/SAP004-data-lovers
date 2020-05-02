@@ -1,7 +1,6 @@
 //import { example } from './data.js';
-
 import data from "./data/lol/lol.js";
-import lol from "./data/lol/lol.js";
+
 
 const aboutGameButton = document.getElementById("about-game");
 aboutGameButton.addEventListener("click", showAboutGame);
@@ -16,12 +15,13 @@ const youtubeButton = document.getElementById("but-youtube");
 youtubeButton.addEventListener("click", showYoutubers);
 
 const charactersDiv = document.getElementById("characters-div");
-const lolToolIntro = document.getElementById("lol-too-intro");
+const lolToolIntro = document.getElementById("lol-tool-intro");
 const aboutTheGameDiv = document.getElementById("about-the-game-div");
 const compareChampion = document.getElementById("compare-champions");
 const youtubeMedia = document.getElementById("youtube-media");
-// DECLAREI VARIÁVEIS PARA OS BOTÕES PARA FICAR MAIS FÁCIL DE TRABALHAR, AO INVÉS DE SEMPRE CHAMAR COM getElementeById
-const champion = data.data;
+
+var champion = data.data;
+
 
 function showChampions() {
   charactersDiv.style.visibility = "visible";
@@ -39,17 +39,25 @@ function showChampions() {
   youtubeMedia.style.visibility = "hidden";
   youtubeMedia.style.display = "none";
 
-  for (let persona in champion) {
+
+  for (let persona in data.data) {
     document.getElementById("see-characters-here").innerHTML += `
     <div class="champions-card">
-    <p class="image"><img src="${champion[persona].img}"><p/>
-    <p class="name">Name: ${persona}</p>  
-    <p class="title">${champion[persona].title}</p>
-    <p class="role">Role: ${champion[persona].tags}</p>
+    <img class="image common" src="${champion[persona].img}">
+    <p class="name common">Name: ${persona}</p>
+    <p class="title common">${champion[persona].title}</p>
+    <p class="role common">Role: ${champion[persona].tags}</p>
+    <p class="info-champ common">Attack: ${champion[persona].info.attack}</p>
+    <p class="info-champ common">Defense: ${champion[persona].info.defense}</p>
+    <p class="info-champ common">Magic: ${champion[persona].info.magic}</p>
+    <p class="info-champ common">Difficulty: ${champion[persona].info.difficulty}</p>
     </div>
     `;
-  }
-} 
+
+  };
+
+};
+
 function showAboutGame() {
   charactersDiv.style.visibility = "hidden";
   charactersDiv.style.display = "none";
@@ -65,7 +73,7 @@ function showAboutGame() {
 
   youtubeMedia.style.visibility = "hidden";
   youtubeMedia.style.display = "none";
-}
+};
 
 function showCompChan() {
   charactersDiv.style.visibility = "hidden";
@@ -82,7 +90,7 @@ function showCompChan() {
 
   youtubeMedia.style.visibility = "hidden";
   youtubeMedia.style.display = "none";
-}
+};
 
 function showYoutubers() {
   charactersDiv.style.visibility = "hidden";
@@ -99,4 +107,74 @@ function showYoutubers() {
 
   youtubeMedia.style.visibility = "visible";
   youtubeMedia.style.display = "block";
-}
+};
+
+document.getElementById("send-ordination").addEventListener("click", sortCharacters);
+
+    
+function sortCharacters(event) {
+
+    if (document.getElementById("AZ").checked){
+
+      document.getElementById("see-characters-here").style.visibility = "hidden"; 
+      document.getElementById("see-characters-here").style.display = "none";
+      
+      document.getElementById("see-characters-sort-here-ZA").style.visibility = "hidden"; 
+      document.getElementById("see-characters-sort-here-ZA").style.display = "none";
+
+      document.getElementById("see-characters-sort-here-AZ").style.visibility = "visible"; 
+      document.getElementById("see-characters-sort-here-AZ").style.display = "block"; 
+      
+      let arrayPersonas = [];
+      for (let persona in data.data){    
+      arrayPersonas.push(persona);   
+      };
+
+      for (let persona of arrayPersonas.sort()) {
+      document.getElementById("see-characters-sort-here-AZ").innerHTML += `
+      <div class="champions-card">
+      <img class="image common" src="${champion[persona].img}">
+      <p class="name common">Name: ${persona}</p>
+      <p class="title common">${champion[persona].title}</p>
+      <p class="role common">Role: ${champion[persona].tags}</p>
+      <p class="info-champ common">Attack: ${champion[persona].info.attack}</p>
+      <p class="info-champ common">Defense: ${champion[persona].info.defense}</p>
+      <p class="info-champ common">Magic: ${champion[persona].info.magic}</p>
+      <p class="info-champ common">Difficulty: ${champion[persona].info.difficulty}</p>
+      </div>
+      `;
+      };
+      
+    }else if(document.getElementById("ZA").checked){
+
+      document.getElementById("see-characters-here").style.visibility = "hidden"; 
+      document.getElementById("see-characters-here").style.display = "none";
+
+      document.getElementById("see-characters-sort-here-AZ").style.visibility = "hidden"; 
+      document.getElementById("see-characters-sort-here-AZ").style.display = "none";
+
+      document.getElementById("see-characters-sort-here-ZA").style.visibility = "visible";  
+      document.getElementById("see-characters-sort-here-ZA").style.display = "block"; 
+
+      let arrayPersonas = [];
+      for (let persona in data.data){    
+      arrayPersonas.push(persona);   
+      };
+
+      for (let persona of arrayPersonas.sort().reverse()) {
+      document.getElementById("see-characters-sort-here-ZA").innerHTML += `
+      <div class="champions-card">
+      <img class="image common" src="${champion[persona].img}">
+      <p class="name common">Name: ${persona}</p>
+      <p class="title common">${champion[persona].title}</p>
+      <p class="role common">Role: ${champion[persona].tags}</p>
+      <p class="info-champ common">Attack: ${champion[persona].info.attack}</p>
+      <p class="info-champ common">Defense: ${champion[persona].info.defense}</p>
+      <p class="info-champ common">Magic: ${champion[persona].info.magic}</p>
+      <p class="info-champ common">Difficulty: ${champion[persona].info.difficulty}</p>
+      </div>
+      `;
+       };
+
+    };
+};
