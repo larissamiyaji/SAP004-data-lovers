@@ -45,6 +45,7 @@ h1{
     text-shadow: 2px 3px 2px #97723d;
     display: inline-flexbox;
     margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 .style-buttons{
@@ -66,7 +67,24 @@ h1{
     border-color: #97723d;
     background: #bda275c7;
 }
-
+#sort-div, #filter-div{
+    display: inline-block;
+    background: #fbd27361;
+    font-size: 15px;
+    text-align: left;
+    border-style: inset;
+    border-width: 4px;
+    border-radius: 5px;
+    border-color: #34dce8;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#send-ordination, #filter-champions{
+    border-radius: 3px;
+    background-color: #bda275;
+    font-size: 13px;
+    border: solid 1px black;
+}
 /*.characters-list{
     text-align: left;
     font-size: ;
