@@ -67,7 +67,7 @@ h1{
     border-color: #97723d;
     background: #bda275c7;
 }
-#sort-div, #filter-div{
+#sort-div, #filter-div, #search-div{
     display: inline-block;
     background: #fbd27361;
     font-size: 15px;
@@ -79,7 +79,7 @@ h1{
     padding: 10px;
     margin-bottom: 10px;
 }
-#send-ordination, #filter-champions{
+#send-ordination, #filter-champions, #search-button{
     border-radius: 3px;
     background-color: #bda275;
     font-size: 13px;
@@ -205,6 +205,9 @@ img:hover{
         border-radius: 3px;
         font-size: 13px;
         border: solid 1px black;
+    }
+    .style-view{
+        padding: 5px;
     }
     .champions-card{
         display: inline-block;
