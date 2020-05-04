@@ -177,6 +177,34 @@ function sortCharacters(event) {
     };
 };
 //Funções de filtros
+const searchButton = document.getElementById('search-button');
+searchButton.addEventListener('click', showAssassins);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*const championsArray = Object.values(data);
 let championsFIltered = []; */
 /*
