@@ -38,9 +38,12 @@ function showChampions() {
   youtubeMedia.style.visibility = "hidden";
   youtubeMedia.style.display = "none";
 
-
+/*Se declarar uma variável e colocar tudo do loop dentro dela fica mais rápido
+ o carregamento da página*/
+  let template =""
   for (let persona in champion) {
-    document.getElementById("see-characters-here").innerHTML += `
+    template += 
+    `
     <div class="champions-card">
     <img class="image common" src="${champion[persona].img}">
     <p class="name common">Name: ${persona}</p>
@@ -52,9 +55,9 @@ function showChampions() {
     <p class="info-champ common">Difficulty: ${champion[persona].info.difficulty}</p>
     </div>
     `;
-
-  };
-
+  }; /*Depois de passar pelo loop, usa o innerHTML e coloca a variavel "template" dentro*/
+  document.getElementById("see-characters-here").innerHTML = template;
+  console.log(template);
 };
 
 function showAboutGame() {
@@ -181,7 +184,17 @@ function sortCharacters(event) {
 const championsArray = Object.keys(champion);
 console.log(championsArray);
 
+const searchButton = document.getElementById('search-button');
+searchButton.addEventListener('click', showAssassins);
 
+function showAssassins(event){
+  hideCharactersDiv();
+  document.getElementById('see-characters-assassins-here').innerHTML = championsArray;
+};
+
+function hideCharactersDiv(){
+  document.getElementById('see-characters-here').style.display = "none";
+};
 
 
 
