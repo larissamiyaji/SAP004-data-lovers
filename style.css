@@ -71,7 +71,7 @@ h1{
     display: inline-block;
     background: #fbd27361;
     font-size: 15px;
-    text-align: left;
+    text-align: center;
     border-style: inset;
     border-width: 4px;
     border-radius: 5px;
@@ -144,7 +144,7 @@ img:hover{
 /*VERSÃO MOBILE*/
 @media only screen and (max-width: 800px){
     html{
-        background-image: url("seamless-wallpaper-mobile.jpg");
+       /* background-image: ; */
         background-size: 100%;
         background-repeat: inherit;
         font-family: 'Girassol';
@@ -200,6 +200,8 @@ img:hover{
         border-radius: 5px;
         padding: 10px;
         margin-bottom: 10px;
+        width: 269px;
+        text-align: center;
     }
     #send-ordination, #filter-champions{
         border-radius: 3px;
