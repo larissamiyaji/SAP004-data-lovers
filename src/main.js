@@ -177,34 +177,123 @@ function sortCharacters(event) {
     };
 };
 //Funções de filtros
-const searchButton = document.getElementById('search-button');
+
+const championsArray = Object.keys(champion);
+console.log(championsArray);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*const searchButton = document.getElementById('filter-champions');
 searchButton.addEventListener('click', showAssassins);
 
+const assassin = document.getElementById('assassin');
+const fighter = document.getElementById('fighter');
+const mage = document.getElementById('mage');
+const marksman = document.getElementById('marksman');
+const support = document.getElementById('support');
+const tank = document.getElementById('tank');
 
+const radioAssassin = document.getElementById('see-characters-assassins-here');
+const radioFighter = document.getElementById('see-characters-fighters-here');
+const radioMage = document.getElementById("see-characters-mage-here");
+const radioMarksman = document.getElementById("see-characters-marksman-here");
+const radioSupport = document.getElementById("see-characters-support-here");
+const radioTank = document.getElementById("see-characters-tank-here");
 
+const seeAssassinsHere = document.getElementById('see-assassins-here');
 
+function showAssassins(event){
+  if(assassin.checked){
+    document.getElementById("see-characters-here").style.visibility = "hidden"; 
+    document.getElementById("see-characters-here").style.display = "none";
+    
+    document.getElementById("see-characters-sort-here-ZA").style.visibility = "hidden"; 
+    document.getElementById("see-characters-sort-here-ZA").style.display = "none";
 
+    document.getElementById("see-characters-sort-here-AZ").style.visibility = "hidden"; 
+    document.getElementById("see-characters-sort-here-AZ").style.display = "none"; 
 
+    radioAssassin.style.visibility = "visible"; 
+    radioAssassin.style.display = "block"; 
 
+    radioFighter.style.visibility = "hidden"; 
+    radioFighter.style.display = "none"; 
 
+    radioMage.style.visibility = "hidden"; 
+    radioMage.style.display = "none";
+    
+    radioMarksman.style.visibility = "hidden"; 
+    radioMarksman.style.display = "none"; 
 
+    radioSupport.style.visibility = "hidden"; 
+    radioSupport.style.display = "none"; 
 
+    radioTank.style.visibility = "hidden"; 
+    radioTank.style.display = "none"; 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    let arrayPersonas = [];
+    for (let persona in champion){
+      arrayPersonas.push(persona);
+    }
+    for( let persona of arrayPersonas.includes('Assassin')){
+      seeAssassinsHere.innerHTML += `
+      <div class="champions-card">
+      <img class="image common" src="${champion[persona].img}">
+      <p class="name common">Name: ${persona}</p>
+      <p class="title common">${champion[persona].title}</p>
+      <p class="role common">Role: ${champion[persona].tags}</p>
+      <p class="info-champ common">Attack: ${champion[persona].info.attack}</p>
+      <p class="info-champ common">Defense: ${champion[persona].info.defense}</p>
+      <p class="info-champ common">Magic: ${champion[persona].info.magic}</p>
+      <p class="info-champ common">Difficulty: ${champion[persona].info.difficulty}</p>
+      </div>
+      `;
+    };
+  };
+}; */
+//------------------------------------------------------------------------------------------
 /*const championsArray = Object.values(data);
 let championsFIltered = []; */
 /*
