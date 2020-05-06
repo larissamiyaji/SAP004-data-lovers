@@ -55,7 +55,7 @@ function showChampions() {
     <p class="info-champ common">Difficulty: ${champion[persona].info.difficulty}</p>
     </div>
     `;
-  }; /*Depois de passar pelo loop, usa o innerHTML e coloca a variavel "template" dentro*/
+  }; /*Depois de passar pelo loop, usa o innerHTML e coloca a variável "template" dentro*/
   document.getElementById("see-characters-here").innerHTML = template;
   console.log(template);
 };
@@ -131,8 +131,9 @@ function sortCharacters(event) {
       arrayPersonas.push(persona);   
       };
 
+      let template = "";
       for (let persona of arrayPersonas.sort()) {
-      document.getElementById("see-characters-sort-here-AZ").innerHTML += `
+      template += `
       <div class="champions-card">
       <img class="image common" src="${champion[persona].img}">
       <p class="name common">Name: ${persona}</p>
@@ -145,7 +146,7 @@ function sortCharacters(event) {
       </div>
       `;
       };
-      
+      document.getElementById("see-characters-sort-here-AZ").innerHTML = template;
     }else if(document.getElementById("ZA").checked){
 
       document.getElementById("see-characters-here").style.visibility = "hidden"; 
@@ -162,8 +163,9 @@ function sortCharacters(event) {
       arrayPersonas.push(persona);   
       };
 
+      let template = "";
       for (let persona of arrayPersonas.sort().reverse()) {
-      document.getElementById("see-characters-sort-here-ZA").innerHTML += `
+      template += `
       <div class="champions-card">
       <img class="image common" src="${champion[persona].img}">
       <p class="name common">Name: ${persona}</p>
@@ -176,16 +178,29 @@ function sortCharacters(event) {
       </div>
       `;
        };
-
+       document.getElementById("see-characters-sort-here-ZA").innerHTML = template;
     };
 };
 //Funções de filtros
 
-const championsArray = Object.keys(champion);
-console.log(championsArray);
+const championsArray = Object.values(champion); //Object.values transforma um objeto em um array de objetos (mostra os valores da propriedade)
+//console.log(championsArray);
 
 const searchButton = document.getElementById('search-button');
 searchButton.addEventListener('click', showAssassins);
+
+let searchEntry = document.getElementById('search-entry');
+
+
+
+
+
+
+
+
+
+
+
 
 function showAssassins(event){
   hideCharactersDiv();
@@ -196,7 +211,23 @@ function hideCharactersDiv(){
   document.getElementById('see-characters-here').style.display = "none";
 };
 
+/*
+let searchEntry = document.getElementById('search-entry');
+function showAssassins(event){
+  if(searchEntry.includes("Assassin")){
+    hideCharactersDiv();
+    //filterAssassin();
+  }; document.getElementById('see-characters-assassins-here').innerHTML = championsArray;
+};
 
+function hideCharactersDiv(){
+  document.getElementById('see-characters-here').style.display = "none";
+};
+
+function filterAssassin(champions){
+  return (champions.searchEntry === searchEntry);
+};
+*/
 
 
 
