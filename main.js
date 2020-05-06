@@ -45,7 +45,7 @@ function showChampions() {
     template += 
     `
     <div class="champions-card">
-    <p><img class="image common" src="${champion[persona].img}"></p>
+    <p class="image-splash"><img class="image common" src="${champion[persona].splash}"></p>
     <p class="name common">Name: ${persona}</p>
     <p class="title common">${champion[persona].title}</p>
     <p class="role common">Role: ${champion[persona].tags}</p>

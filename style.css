@@ -106,7 +106,7 @@ h1{
     border-color: #34dce8;
     background: #fbd27361;
     width: 304px;
-    height: 330px;
+    height: 445px;
     font-size: 20px;
     margin-bottom: 10px;
 /*
@@ -120,11 +120,12 @@ h1{
     font-size: 20px;
     margin-bottom: 10px;*/
 }
-img:hover{
+/*img:hover{
     transform: scale(1.5);
     cursor: pointer;
     cursor: url('cursor-lol.cur'), default;
 }
+*/
 .image, .name, .title, .role, .info-champ{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -134,7 +135,8 @@ img:hover{
 }
 .image{
     align-items: center;
-    padding-top: 10px;
+    padding-top: 0%;
+    max-width: 304px;
 }
 .made-by{
     text-align: center;
