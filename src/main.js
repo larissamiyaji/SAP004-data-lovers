@@ -135,7 +135,7 @@ function sortCharacters(event) {
       for (let persona of arrayPersonas.sort()) {
       template += `
       <div class="champions-card">
-      <img class="image common" src="${champion[persona].img}">
+      <img class="image common" src="${champion[persona].splash}">
       <p class="name common">Name: ${persona}</p>
       <p class="title common">${champion[persona].title}</p>
       <p class="role common">Role: ${champion[persona].tags}</p>
@@ -167,7 +167,7 @@ function sortCharacters(event) {
       for (let persona of arrayPersonas.sort().reverse()) {
       template += `
       <div class="champions-card">
-      <img class="image common" src="${champion[persona].img}">
+      <img class="image common" src="${champion[persona].splash}">
       <p class="name common">Name: ${persona}</p>
       <p class="title common">${champion[persona].title}</p>
       <p class="role common">Role: ${champion[persona].tags}</p>
