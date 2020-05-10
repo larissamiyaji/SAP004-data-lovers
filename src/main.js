@@ -186,33 +186,56 @@ function sortCharacters(event) {
 //Funções de filtros
 
 const championsArray = Object.values(champion); //Object.values transforma um objeto em um array de objetos (mostra os valores da propriedade)
-//console.log(championsArray);
-
-const searchButton = document.getElementById("search-button");
-searchButton.addEventListener("click", filterChampions);
+console.log(championsArray);
 
 let searchEntry = document.getElementById("search-entry").value;
 
 function filterChampions(event){
-  if(searchEntry.includes(champion.name)){
-    let searchEntry = document.getElementById("search-entry").value;
+  if(champion.name === searchEntry){
+    //let searchEntry = document.getElementById("search-entry").value;
     let championsFilteredByName = championsArray.filter(champion => champion.name.includes(searchEntry));
+    document.getElementById("see-characters-here").innerHTML = championsFilteredByName;
     console.log(championsFilteredByName);
     let championsFilteredByRole = championsArray.filter(champion => champion.tags.includes(searchEntry));
+    document.getElementById("see-characters-here").innerHTML = championsFilteredByRole;
     console.log(championsFilteredByRole);
     let championsFilteredByPartype = championsArray.filter(champion => champion.partype.includes(searchEntry));
+    document.getElementById("see-characters-here").innerHTML = championsFilteredByPartype;
     console.log(championsFilteredByPartype);
     let championsFilteredByKey = championsArray.filter(champion => champion.key.includes(searchEntry));
+    document.getElementById("see-characters-here").innerHTML = championsFilteredByKey;
     console.log(championsFilteredByKey);
-    document.getElementById("see-characters-here").innerHTML = searchEntry;
   } else{
-    document.getElementById("see-characters-here").innerHTML = "Sem resultados";
+    document.getElementById("see-characters-here").innerHTML = "Não foram encontrados resultados";
   };
 };
 
+const searchButton = document.getElementById("search-button");
+searchButton.addEventListener("click", filterChampions);
 
-
-
+//------------------------------------------------------------------------------------------------------------
+/*
+function championsByName(){
+  let championsFilteredByName = championsArray.filter(champion => champion.name.includes(searchEntry));
+  document.getElementById("see-characters-here").innerHTML = championsFilteredByName;
+  //console.log(championsFilteredByName);
+};
+function championsByRole(){
+  let championsFilteredByRole = championsArray.filter(champion => champion.tags.includes(searchEntry));
+  document.getElementById("see-characters-here").innerHTML = championsFilteredByRole;
+  //console.log(championsFilteredByRole);
+};
+function championsByPartype(){
+  let championsFilteredByPartype = championsArray.filter(champion => champion.partype.includes(searchEntry));
+  document.getElementById("see-characters-here").innerHTML = championsFilteredByPartype;
+  //console.log(championsFilteredByPartype);
+};
+function championsByKey(){
+  let championsFilteredByKey = championsArray.filter(champion => champion.key.includes(searchEntry));
+  document.getElementById("see-characters-here").innerHTML = championsFilteredByKey;
+  //console.log(championsFilteredByKey);
+};
+*/
 
 
 
