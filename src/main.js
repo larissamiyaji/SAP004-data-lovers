@@ -38,12 +38,11 @@ function showChampions() {
   youtubeMedia.style.visibility = "hidden";
   youtubeMedia.style.display = "none";
 
-/*Se declarar uma variável e colocar tudo do loop dentro dela fica mais rápido
+  /*Se declarar uma variável e colocar tudo do loop dentro dela fica mais rápido
  o carregamento da página*/
-  let template =""
+  let template = "";
   for (let persona in champion) {
-    template += 
-    `
+    template += `
     <div class="champions-card">
     <p class="image-splash"><img class="image common" src="${champion[persona].splash}"></p>
     <p class="name common">Name: ${persona}</p>
@@ -55,10 +54,10 @@ function showChampions() {
     <p class="info-champ common">Difficulty: ${champion[persona].info.difficulty}</p>
     </div>
     `;
-  }; /*Depois de passar pelo loop, usa o innerHTML e coloca a variável "template" dentro*/
+  } /*Depois de passar pelo loop, usa o innerHTML e coloca a variável "template" dentro*/
   document.getElementById("see-characters-here").innerHTML = template;
-  console.log(template);
-};
+  //console.log(template);
+}
 
 function showAboutGame() {
   charactersDiv.style.visibility = "hidden";
@@ -75,7 +74,7 @@ function showAboutGame() {
 
   youtubeMedia.style.visibility = "hidden";
   youtubeMedia.style.display = "none";
-};
+}
 
 function showCompChan() {
   charactersDiv.style.visibility = "hidden";
@@ -92,7 +91,7 @@ function showCompChan() {
 
   youtubeMedia.style.visibility = "hidden";
   youtubeMedia.style.display = "none";
-};
+}
 
 function showYoutubers() {
   charactersDiv.style.visibility = "hidden";
@@ -109,30 +108,30 @@ function showYoutubers() {
 
   youtubeMedia.style.visibility = "visible";
   youtubeMedia.style.display = "block";
-};
+}
 //Função de ordenar personagens
-document.getElementById("send-ordination").addEventListener("click", sortCharacters);
-    
+document
+  .getElementById("send-ordination")
+  .addEventListener("click", sortCharacters);
+
 function sortCharacters(event) {
+  if (document.getElementById("AZ").checked) {
+    document.getElementById("see-characters-here").style.visibility = "hidden";
+    document.getElementById("see-characters-here").style.display = "none";
 
-    if (document.getElementById("AZ").checked){
+    document.getElementById("see-characters-sort-here-ZA").style.visibility = "hidden";
+    document.getElementById("see-characters-sort-here-ZA").style.display = "none";
 
-      document.getElementById("see-characters-here").style.visibility = "hidden"; 
-      document.getElementById("see-characters-here").style.display = "none";
-      
-      document.getElementById("see-characters-sort-here-ZA").style.visibility = "hidden"; 
-      document.getElementById("see-characters-sort-here-ZA").style.display = "none";
+    document.getElementById("see-characters-sort-here-AZ").style.visibility = "visible";
+    document.getElementById("see-characters-sort-here-AZ").style.display = "block";
 
-      document.getElementById("see-characters-sort-here-AZ").style.visibility = "visible"; 
-      document.getElementById("see-characters-sort-here-AZ").style.display = "block"; 
-      
-      let arrayPersonas = [];
-      for (let persona in champion){    
-      arrayPersonas.push(persona);   
-      };
+    let arrayPersonas = [];
+    for (let persona in champion) {
+      arrayPersonas.push(persona);
+    }
 
-      let template = "";
-      for (let persona of arrayPersonas.sort()) {
+    let template = "";
+    for (let persona of arrayPersonas.sort()) {
       template += `
       <div class="champions-card">
       <img class="image common" src="${champion[persona].splash}">
@@ -145,26 +144,29 @@ function sortCharacters(event) {
       <p class="info-champ common">Difficulty: ${champion[persona].info.difficulty}</p>
       </div>
       `;
-      };
-      document.getElementById("see-characters-sort-here-AZ").innerHTML = template;
-    }else if(document.getElementById("ZA").checked){
+    }
+    document.getElementById("see-characters-sort-here-AZ").innerHTML = template;
+  } else if (document.getElementById("ZA").checked) {
+    document.getElementById("see-characters-here").style.visibility = "hidden";
+    document.getElementById("see-characters-here").style.display = "none";
 
-      document.getElementById("see-characters-here").style.visibility = "hidden"; 
-      document.getElementById("see-characters-here").style.display = "none";
+    document.getElementById("see-characters-sort-here-AZ").style.visibility =
+      "hidden";
+    document.getElementById("see-characters-sort-here-AZ").style.display =
+      "none";
 
-      document.getElementById("see-characters-sort-here-AZ").style.visibility = "hidden"; 
-      document.getElementById("see-characters-sort-here-AZ").style.display = "none";
+    document.getElementById("see-characters-sort-here-ZA").style.visibility =
+      "visible";
+    document.getElementById("see-characters-sort-here-ZA").style.display =
+      "block";
 
-      document.getElementById("see-characters-sort-here-ZA").style.visibility = "visible";  
-      document.getElementById("see-characters-sort-here-ZA").style.display = "block"; 
+    let arrayPersonas = [];
+    for (let persona in champion) {
+      arrayPersonas.push(persona);
+    }
 
-      let arrayPersonas = [];
-      for (let persona in champion){    
-      arrayPersonas.push(persona);   
-      };
-
-      let template = "";
-      for (let persona of arrayPersonas.sort().reverse()) {
+    let template = "";
+    for (let persona of arrayPersonas.sort().reverse()) {
       template += `
       <div class="champions-card">
       <img class="image common" src="${champion[persona].splash}">
@@ -177,19 +179,36 @@ function sortCharacters(event) {
       <p class="info-champ common">Difficulty: ${champion[persona].info.difficulty}</p>
       </div>
       `;
-       };
-       document.getElementById("see-characters-sort-here-ZA").innerHTML = template;
-    };
-};
+    }
+    document.getElementById("see-characters-sort-here-ZA").innerHTML = template;
+  }
+}
 //Funções de filtros
 
 const championsArray = Object.values(champion); //Object.values transforma um objeto em um array de objetos (mostra os valores da propriedade)
 //console.log(championsArray);
 
-const searchButton = document.getElementById('search-button');
-searchButton.addEventListener('click', showAssassins);
+const searchButton = document.getElementById("search-button");
+searchButton.addEventListener("click", filterChampions);
 
-let searchEntry = document.getElementById('search-entry');
+let searchEntry = document.getElementById("search-entry").value;
+
+function filterChampions(event){
+  if(searchEntry.includes(champion.name)){
+    let searchEntry = document.getElementById("search-entry").value;
+    let championsFilteredByName = championsArray.filter(champion => champion.name.includes(searchEntry));
+    console.log(championsFilteredByName);
+    let championsFilteredByRole = championsArray.filter(champion => champion.tags.includes(searchEntry));
+    console.log(championsFilteredByRole);
+    let championsFilteredByPartype = championsArray.filter(champion => champion.partype.includes(searchEntry));
+    console.log(championsFilteredByPartype);
+    let championsFilteredByKey = championsArray.filter(champion => champion.key.includes(searchEntry));
+    console.log(championsFilteredByKey);
+    document.getElementById("see-characters-here").innerHTML = searchEntry;
+  } else{
+    document.getElementById("see-characters-here").innerHTML = "Sem resultados";
+  };
+};
 
 
 
@@ -202,14 +221,34 @@ let searchEntry = document.getElementById('search-entry');
 
 
 
+
+
+
+
+
+
+
+
+
+
+//-----------------------------------------------------------------------------------------------------------------------
+/*
 function showAssassins(event){
-  hideCharactersDiv();
-  document.getElementById('see-characters-assassins-here').innerHTML = championsArray;
-};
+  //hideCharactersDiv();
+  
+  // O QUE FAZER AQUI??
+  return championsArray === searchEntry.includes("Aatrox");
 
-function hideCharactersDiv(){
-  document.getElementById('see-characters-here').style.display = "none";
+  let assassinsHere = document.getElementById('see-characters-assassins-here');
+  assassinsHere.innerHTML = championsArray;
+}; 
+
+function filterChampions(){
+  document.getElementsByName('see-characters-assassins-here').innerHTML = championsArray.filter(showAssassins);
 };
+*/
+
+//-----------------------------------------------------------------------------------------------------------------------
 
 /*
 let searchEntry = document.getElementById('search-entry');
@@ -229,46 +268,7 @@ function filterAssassin(champions){
 };
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//-----------------------------------------------------------------------------------------------------------------------
 /*const searchButton = document.getElementById('filter-champions');
 searchButton.addEventListener('click', showAssassins);
 
@@ -337,7 +337,7 @@ function showAssassins(event){
     };
   };
 }; */
-//------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
 /*const championsArray = Object.values(data);
 let championsFIltered = []; */
 /*
@@ -357,7 +357,7 @@ const radioMage = document.getElementById("see-characters-mage-here");
 const radioMarksman = document.getElementById("see-characters-marksman-here");
 const radioSupport = document.getElementById("see-characters-support-here");
 const radioTank = document.getElementById("see-characters-tank-here");*/
-//-----------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
 /*
 function filterAssasin(){
   return (persona.tags === "Assassin")
@@ -384,7 +384,7 @@ arrayPersonas.filter(filterMage);
 arrayPersonas.filter(filterMarksman);
 arrayPersonas.filter(filterSupport);
 arrayPersonas.filter(filterTank); */
-//-----------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
 
 /*function filterRole(event){
   if (assassin.checked){
