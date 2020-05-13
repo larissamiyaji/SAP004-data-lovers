@@ -114,7 +114,7 @@ document
   .getElementById("send-ordination")
   .addEventListener("click", sortCharacters);
 
-function sortCharacters(event) {
+function sortCharacters() {
   if (document.getElementById("AZ").checked) {
     document.getElementById("see-characters-here").style.visibility = "hidden";
     document.getElementById("see-characters-here").style.display = "none";
@@ -188,7 +188,7 @@ const searchButton = document.getElementById('search-button');
 searchButton.addEventListener('click', showResults);
 const seeFilteredHere = document.getElementById('see-filtered-champions-here');
 
-function showResults(event){
+function showResults(){
   showFiltered();
   championsByName();
   championsByRole();
@@ -201,7 +201,7 @@ function showResults(event){
   let arrayPersonas = [];
   for (let persona in championsArray) {
     arrayPersonas.push(persona);
-  };
+  }
 
   let template = "";
   for (let persona in championsArray) {
@@ -217,44 +217,44 @@ function showResults(event){
     <p class="info-champ common">Difficulty: ${championsArray[persona].info.difficulty}</p>
     </div>
     `;
-  };
+  }
   seeFilteredHere.innerHTML = template;
-};
+}
 
 function hideCharacters(){
   document.getElementById("see-characters-here").style.visibility = "hidden";
   document.getElementById("see-characters-here").style.display = "none";
-};
+}
 function hideCharactersAZ(){
   document.getElementById("see-characters-sort-here-AZ").style.visibility = "hidden";
   document.getElementById("see-characters-sort-here-AZ").style.display = "none";
-};
+}
 function hideCharactersZA(){
   document.getElementById("see-characters-sort-here-ZA").style.visibility = "visible";
   document.getElementById("see-characters-sort-here-ZA").style.display = "block";
-};
+}
 function showFiltered(){
   seeFilteredHere.style.visibility = "visible";
   seeFilteredHere.style.display = "block";
-};
+}
 //=============================================================================================================== 
 function championsByName(){
   const championsFilteredByName = championsArray.filter(champion => champion.name.includes(userInput.value));
   seeFilteredHere.innerHTML = championsFilteredByName.value;
-  console.log(championsFilteredByName);
-};
+ // console.log(championsFilteredByName);
+}
 function championsByRole(){
   const championsFilteredByRole = championsArray.filter(champion => champion.tags.includes(userInput.value));
   seeFilteredHere.innerHTML = championsFilteredByRole.value;
-  console.log(championsFilteredByRole);
-};
+ // console.log(championsFilteredByRole);
+}
 function championsByPartype(){
   const championsFilteredByPartype = championsArray.filter(champion => champion.partype.includes(userInput.value));
   seeFilteredHere.innerHTML = championsFilteredByPartype.value;
-  console.log(championsFilteredByPartype);
-};
+ // console.log(championsFilteredByPartype);
+}
 function championsByKey(){
   const championsFilteredByKey = championsArray.filter(champion => champion.key.includes(userInput.value));
   seeFilteredHere.innerHTML = championsFilteredByKey.value;
-  console.log(championsFilteredByKey);
-};
+ // console.log(championsFilteredByKey);
+}
