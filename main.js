@@ -150,15 +150,11 @@ function sortCharacters(event) {
     document.getElementById("see-characters-here").style.visibility = "hidden";
     document.getElementById("see-characters-here").style.display = "none";
 
-    document.getElementById("see-characters-sort-here-AZ").style.visibility =
-      "hidden";
-    document.getElementById("see-characters-sort-here-AZ").style.display =
-      "none";
+    document.getElementById("see-characters-sort-here-AZ").style.visibility = "hidden";
+    document.getElementById("see-characters-sort-here-AZ").style.display = "none";
 
-    document.getElementById("see-characters-sort-here-ZA").style.visibility =
-      "visible";
-    document.getElementById("see-characters-sort-here-ZA").style.display =
-      "block";
+    document.getElementById("see-characters-sort-here-ZA").style.visibility = "visible";
+    document.getElementById("see-characters-sort-here-ZA").style.display = "block";
 
     let arrayPersonas = [];
     for (let persona in champion) {
@@ -190,15 +186,58 @@ const championsArray = Object.values(champion); //Object.values transforma um ob
 const userInput = document.getElementById('search-entry');
 const searchButton = document.getElementById('search-button');
 searchButton.addEventListener('click', showResults);
-const seeFilteredHere =   document.getElementById('see-filtered-champions-here');
+const seeFilteredHere = document.getElementById('see-filtered-champions-here');
 
 function showResults(event){
+  showFiltered();
   championsByName();
   championsByRole();
   championsByPartype();
   championsByKey();
+  hideCharacters();
+  hideCharactersAZ();
+  hideCharactersZA();
+
+  let arrayPersonas = [];
+  for (let persona in championsArray) {
+    arrayPersonas.push(persona);
+  };
+
+  let template = "";
+  for (let persona in championsArray) {
+    template += `
+    <div class="champions-card">
+    <p class="image-splash"><img class="image common" src="${championsArray[persona].splash}"></p>
+    <p class="name common">Name: ${championsArray[persona].name}</p>
+    <p class="title common">${championsArray[persona].title}</p>
+    <p class="role common">Role: ${championsArray[persona].tags}</p>
+    <p class="info-champ common">Attack: ${championsArray[persona].info.attack}</p>
+    <p class="info-champ common">Defense: ${championsArray[persona].info.defense}</p>
+    <p class="info-champ common">Magic: ${championsArray[persona].info.magic}</p>
+    <p class="info-champ common">Difficulty: ${championsArray[persona].info.difficulty}</p>
+    </div>
+    `;
+  };
+  seeFilteredHere.innerHTML = template;
 };
 
+function hideCharacters(){
+  document.getElementById("see-characters-here").style.visibility = "hidden";
+  document.getElementById("see-characters-here").style.display = "none";
+};
+function hideCharactersAZ(){
+  document.getElementById("see-characters-sort-here-AZ").style.visibility = "hidden";
+  document.getElementById("see-characters-sort-here-AZ").style.display = "none";
+};
+function hideCharactersZA(){
+  document.getElementById("see-characters-sort-here-ZA").style.visibility = "visible";
+  document.getElementById("see-characters-sort-here-ZA").style.display = "block";
+};
+function showFiltered(){
+  seeFilteredHere.style.visibility = "visible";
+  seeFilteredHere.style.display = "block";
+};
+//=============================================================================================================== 
 function championsByName(){
   const championsFilteredByName = championsArray.filter(champion => champion.name.includes(userInput.value));
   seeFilteredHere.innerHTML = championsFilteredByName.value;
