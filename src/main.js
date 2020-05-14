@@ -74,6 +74,11 @@ function showYoutubers() {
 
 
 const userInput = document.getElementById('search-entry');
+userInput.addEventListener("keypress" , (event) => {
+  if (event.keyCode === 13) {
+    showChampions(championsByName(championsArray))
+  }
+}) // HABILITA O SEARCH COM A TECLA ENTER
 const searchButton = document.getElementById('search-button');
 
 
@@ -121,15 +126,11 @@ showChampions(championsArray);    //MOSTRA PERSONAGENS NOS CARDS
 const showChampionsButton = document.getElementById("show-champions");
 showChampionsButton.addEventListener("click", showChampionsForButton);
 
-
-
 function championsByName(arrayCharactersForFilter){
   return arrayCharactersForFilter.filter(champion => champion.name.toUpperCase().includes(userInput.value.toUpperCase())); //PESQUISA DENTRO DOS DADOS OQUE O USUÁRIO FORNECE
 };
 
 searchButton.addEventListener('click', () => showChampions(championsByName(championsArray))); //MOSTRA OS RESULTADOS DA PESQUISA
-
-
 
 function sortCharacters(arrayCharactersForSort) {
 return arrayCharactersForSort.slice().sort();  //ORDENA OS PERSONAGENS
