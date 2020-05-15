@@ -2,8 +2,6 @@
 import data from "./data/lol/lol.js";
 
 const championsArray = Object.values(data.data);
-
-
 const aboutGameButton = document.getElementById("about-game");
 aboutGameButton.addEventListener("click", showAboutGame);
 
@@ -18,8 +16,6 @@ const lolToolIntro = document.getElementById("lol-tool-intro");
 const aboutTheGameDiv = document.getElementById("about-the-game-div");
 const compareChampion = document.getElementById("compare-champions");
 const youtubeMedia = document.getElementById("youtube-media");
-
-
 
 function showAboutGame() {
   charactersDiv.style.visibility = "hidden";
@@ -74,13 +70,12 @@ function showYoutubers() {
 
 
 const userInput = document.getElementById('search-entry');
-userInput.addEventListener("keypress" , (event) => {
+userInput.addEventListener("keypress", (event) => {
   if (event.keyCode === 13) {
     showChampions(championsByName(championsArray))
   }
 }) // HABILITA O SEARCH COM A TECLA ENTER
 const searchButton = document.getElementById('search-button');
-
 
 function showChampions(arrayCharacters) {
   document.getElementById("characters-div").style.visibility = "visible";
@@ -107,6 +102,7 @@ function showChampions(arrayCharacters) {
     <p class="image-splash"><img class="image common" src="${persona.splash}"></p>
     <p class="name common">Name: ${persona.name}</p>
     <p class="title common">${persona.title}</p>
+    <p class="key common">Key: ${persona.key}</p>
     <p class="role common">Role: ${persona.tags}</p>
     <p class="info-champ common">Attack: ${persona.info.attack}</p>
     <p class="info-champ common">Defense: ${persona.info.defense}</p>
@@ -116,21 +112,24 @@ function showChampions(arrayCharacters) {
     `;
   }; 
   document.getElementById("see-characters-here").innerHTML = template;
-  
 };
 
 function showChampionsForButton(){
 showChampions(championsArray);    //MOSTRA PERSONAGENS NOS CARDS
 };
 
-const showChampionsButton = document.getElementById("show-champions");
+const showChampionsButton = document.getElementById("show-champions-button");
 showChampionsButton.addEventListener("click", showChampionsForButton);
 
 function championsByName(arrayCharactersForFilter){
-  return arrayCharactersForFilter.filter(champion => champion.name.toUpperCase().includes(userInput.value.toUpperCase())); //PESQUISA DENTRO DOS DADOS OQUE O USUÁRIO FORNECE
+  return arrayCharactersForFilter.filter(champion => champion.name.toUpperCase().includes(userInput.value.toUpperCase())); //PESQUISA DENTRO DOS DADOS O QUE O USUÁRIO FORNECE
 };
-
 searchButton.addEventListener('click', () => showChampions(championsByName(championsArray))); //MOSTRA OS RESULTADOS DA PESQUISA
+
+function championsByKey(arrayCharactersForFilter){
+  return arrayCharactersForFilter.filter(champion => champion.key.toUpperCase().includes(userInput.value.toUpperCase())); //PESQUISA DENTRO DOS DADOS O QUE O USUÁRIO FORNECE
+};
+searchButton.addEventListener('click', () => showChampions(championsByKey(championsArray))); //MOSTRA OS RESULTADOS DA PESQUISA
 
 function sortCharacters(arrayCharactersForSort) {
 return arrayCharactersForSort.slice().sort();  //ORDENA OS PERSONAGENS

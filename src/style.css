@@ -120,7 +120,7 @@ h1 {
     cursor: url('cursor-lol.cur'), default;
 }
 */
-.image, .name, .title, .role, .info-champ {
+.image, .name, .title, .key, .role, .info-champ {
   margin-top: 0px;
   margin-bottom: 0px;
 }
