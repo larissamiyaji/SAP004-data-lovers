@@ -73,26 +73,39 @@ h1 {
   padding: 10px;
   margin-bottom: 10px;
 }
-#send-ordination, #filter-champions, #search-button, #reset-button {
+#send-ordination, #filter-champions, #search-button, #reset-button, #see-data-here-button{
   border-radius: 3px;
   background-color: #bda275;
   font-size: 13px;
   border: solid 1px black;
 }
-/*.characters-list{
-    text-align: left;
-    font-size: ;
-    display: flex;
-    flex-wrap: wrap;
-}*/
-/*.characters-list > div{
-    margin: 10px;
-    align-items: center;
-}*/
-/*.champions-list{
-    display: inline;
-    margin-right: 10px;
-}*/
+#compare-champions{
+  padding-bottom: 15px;
+}
+#div-skill-number{
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#dados-habilidade{
+  background-color: blueviolet;
+  display: flex;
+  text-align: center;
+}
+#dados-numeros{
+  background-color: pink;
+  display: flex;
+  text-align: center;
+}
+.for-display{
+  height: 30px;
+  
+}
+#see-data-here-button{
+  height: 45px;
+  width: 150px;
+}
 .champions-card {
   display: inline-grid;
   border-style: groove;
@@ -103,24 +116,8 @@ h1 {
   height: 445px;
   font-size: 20px;
   margin-bottom: 10px;
-  /*
-    display: inline-block;
-    border-style: groove;
-    border-width: 4px;
-    border-color: #34dce8;
-    background: #fbd27361;
-    width: 600px;
-    height: 250px;
-    font-size: 20px;
-    margin-bottom: 10px;*/
 }
-/*img:hover{
-    transform: scale(1.5);
-    cursor: pointer;
-    cursor: url('cursor-lol.cur'), default;
-}
-*/
-.image, .name, .title, .role, .info-champ {
+.image, .name, .title, .key, .role, .info-champ {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -147,12 +144,6 @@ h1 {
 .insivible-class {
   visibility: hidden;
   display: none;
-}
-/*TEMPORÁRIO*/
-#see-filtered-champions-here {
-  border-style: inset;
-  border-width: 2px;
-  border-color: blue;
 }
 
 /*VERSÃO MOBILE*/
@@ -240,12 +231,6 @@ h1 {
     padding-top: 0%;
     max-width: 100%;
   }
-  /*.characters-list{
-        text-align: left;
-        font-size: 20px;
-        background: #ffffff3d;
-        background: #bda275c7;
-    }*/
   .made-by {
     text-align: center;
     bottom: 0;
