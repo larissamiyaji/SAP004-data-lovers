@@ -88,19 +88,8 @@ h1 {
   align-items: center;
   justify-content: space-evenly;
 }
-#dados-habilidade{
-  background-color: blueviolet;
-  display: flex;
-  text-align: center;
-}
-#dados-numeros{
-  background-color: pink;
-  display: flex;
-  text-align: center;
-}
 .for-display{
   height: 30px;
-  
 }
 #see-data-here-button{
   height: 45px;
@@ -225,6 +214,23 @@ h1 {
     width: 95%;
     height: 90%;
     margin-bottom: 10px;
+  }
+  #div-skill-number{
+    height: 130px;
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 75px;
+  }
+  .for-display{
+    height: 30px;
+  }
+  #maior-igual-que{
+    margin-bottom: 0px;
+  }
+  #see-data-here-button{
+    height: 45px;
+    width: 150px;
   }
   .image {
     align-items: center;
