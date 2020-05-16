@@ -61,17 +61,23 @@ h1 {
   border-color: #97723d;
   background: #bda275c7;
 }
+#order-search-buttons{
+  display: inline-block;
+}
 #sort-div, #filter-div, #search-div {
   display: inline-block;
   background: #fbd27361;
   font-size: 15px;
-  text-align: center;
   border-style: inset;
   border-width: 4px;
   border-radius: 5px;
   border-color: #34dce8;
-  padding: 10px;
+  padding: 5px;
   margin-bottom: 10px;
+}
+#sort-div{
+  display: flex;
+  width: 262px;
 }
 #send-ordination, #filter-champions, #search-button, #reset-button, #see-data-here-button{
   border-radius: 3px;
@@ -196,6 +202,9 @@ h1 {
     margin-bottom: 10px;
     width: 269px;
     text-align: center;
+  }
+  #sort-div{
+    width: 254px;
   }
   #send-ordination, #filter-champions {
     border-radius: 3px;
