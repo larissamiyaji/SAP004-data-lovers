@@ -1,6 +1,7 @@
 * {
   cursor: url("cursor-lol.cur"), default;
   font-family: "Cinzel", serif;
+<<<<<<< HEAD
 }
 html {
   background-image: url("wallpaper.jpg");
@@ -20,6 +21,27 @@ header {
   border-width: 5px;
   border-radius: 20px;
 }
+=======
+}
+html {
+  background-image: url("wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+header {
+  background: #ffffff3d;
+  font-size: 90px;
+  text-align: center;
+  color: #97723d;
+  text-shadow: 2px 3px 2px black;
+  border-style: ridge;
+  border-color: #97723d;
+  border-width: 5px;
+  border-radius: 20px;
+}
+>>>>>>> a36c45e4ad1362ba75ac5ad39eecdb281b14f7f9
 a {
   text-decoration: none;
 }
@@ -61,17 +83,25 @@ h1 {
   border-color: #97723d;
   background: #bda275c7;
 }
+<<<<<<< HEAD
 #order-search-buttons{
   display: inline-block;
 }
+=======
+>>>>>>> a36c45e4ad1362ba75ac5ad39eecdb281b14f7f9
 #sort-div, #filter-div, #search-div {
   display: inline-block;
   background: #fbd27361;
   font-size: 15px;
+<<<<<<< HEAD
+=======
+  text-align: center;
+>>>>>>> a36c45e4ad1362ba75ac5ad39eecdb281b14f7f9
   border-style: inset;
   border-width: 4px;
   border-radius: 5px;
   border-color: #34dce8;
+<<<<<<< HEAD
   padding: 5px;
   margin-bottom: 10px;
 }
@@ -79,6 +109,11 @@ h1 {
   display: flex;
   width: 262px;
 }
+=======
+  padding: 10px;
+  margin-bottom: 10px;
+}
+>>>>>>> a36c45e4ad1362ba75ac5ad39eecdb281b14f7f9
 #send-ordination, #filter-champions, #search-button, #reset-button, #see-data-here-button{
   border-radius: 3px;
   background-color: #bda275;
@@ -203,9 +238,12 @@ h1 {
     width: 269px;
     text-align: center;
   }
+<<<<<<< HEAD
   #sort-div{
     width: 254px;
   }
+=======
+>>>>>>> a36c45e4ad1362ba75ac5ad39eecdb281b14f7f9
   #send-ordination, #filter-champions {
     border-radius: 3px;
     font-size: 13px;
@@ -253,4 +291,8 @@ h1 {
     width: 100%;
     background: #ffffff3d;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a36c45e4ad1362ba75ac5ad39eecdb281b14f7f9
