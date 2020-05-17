@@ -1,8 +1,10 @@
 import { searchChampionsByName,
+         /*
          sortCharactersAZ,
          sortCharactersZA,
-         percentageByTypeAndLevel } from '../src/data.js';
-
+         percentageByTypeAndLevel
+*/ } from '../src/data.js';
+/*
 const dataOrdenada = [{
   id: "A",
   name: "A",
@@ -103,4 +105,25 @@ const pessoa =[
     name: "^Gareb",
   },
 ]
+*/
+//---------------------------------------------------------------------------------
+const arrayCharactersForFilter = [
+  {name: "Aatrox"},
+  {name: "Akali"},
+  {name: "GangPlank"},
+  {name: "Olaf"},
+  {name: "Zyra"},
+];
 
+const userInput = "Akali";
+
+describe('searchChampionsByName', () => {
+
+  it('is a function', () => {
+    expect(typeof searchChampionsByName).toBe('function');
+  });
+
+  it('should return "Akali" when user types "Akali"', () => {
+    expect(searchChampionsByName(arrayCharactersForFilter)).expect(userInput);
+  });
+});
