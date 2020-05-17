@@ -1,3 +1,4 @@
+/*
 ///////---------Estudando para refatorar para fazer filtro
 let data = {
     "type": "champion",
@@ -145,7 +146,7 @@ names.push(persona.id);
 let porcentagem = (names.length * 100) / total.length;
 //console.log(parseInt(porcentagem));
 
---------------------------------------
+//--------------------------------------
 
 ///////---------Estudando para calculo agregado
 let data = {
@@ -221,3 +222,4 @@ let compare = prompt('Escolha uma info: ">=", "<=", "==" :');
 
 percentageByTypeAndLevel(tipoDeInfo, numNivel, compare);
 
+*/
