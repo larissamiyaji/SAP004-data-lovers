@@ -20,15 +20,6 @@ const buttonShowChampions = document.getElementById("show-champions");
 const searchButton =document.getElementById('search-button');
 const radioAZ = document.getElementById("AZ");
 const radioZA = document.getElementById("ZA");
-<<<<<<< HEAD
-const userInput = document.getElementById("search-entry");
-userInput.addEventListener("keypress" , (event) => {
-  if (event.keyCode === 13) {
-    showChampionsInCards(searchChampionsByName(championsArray))
-  }
-})
-=======
->>>>>>> a36c45e4ad1362ba75ac5ad39eecdb281b14f7f9
 
 aboutGameButton.addEventListener("click", showAboutGame);
 compareChampionButton.addEventListener("click", () => showCompChan(championsArray));
