@@ -15,11 +15,11 @@ export function percentageByTypeAndLevel(typeOfInfoArg, levelValueArg, champions
 
       if(persona.info[typeOfInfoArg] >= levelValueArg){
         numberOfChampions.push(persona.id);
-      };
-    };
+      }
+    }
 
    return parseInt((numberOfChampions.length * 100) / totalOfChampions.length);
-};
+}
 
 export  function showCompChan(arraycharacterForAggregateCalculation) {
     charactersDiv.style.visibility = "hidden";
@@ -53,8 +53,8 @@ export  function showCompChan(arraycharacterForAggregateCalculation) {
         let resultForTheInformationProvided = percentageByTypeAndLevel(typeOfInfo, levelValue, arraycharacterForAggregateCalculation);
     
         document.getElementById("see-data-here").innerHTML = resultForTheInformationProvided + "% dos Campeões tem " +typeOfInfo + " maior igual que " + levelValue;
-    };         
-};
+    }      
+}
 
 export function showAboutGame() {
     charactersDiv.style.visibility = "hidden";
@@ -71,7 +71,7 @@ export function showAboutGame() {
   
     youtubeMedia.style.visibility = "hidden";
     youtubeMedia.style.display = "none";
-};
+}
 
 export function showYoutubers() {
     charactersDiv.style.visibility = "hidden";
@@ -88,7 +88,7 @@ export function showYoutubers() {
   
     youtubeMedia.style.visibility = "visible";
     youtubeMedia.style.display = "block";
-};
+}
 
 export function championsInCards(arrayCharactersArg){
 
@@ -107,10 +107,10 @@ export function championsInCards(arrayCharactersArg){
       <p class="info-champ common">Difficulty: ${persona.info.difficulty}</p>
       </div>
       `;
-    };
+    }
 
     return template;
-};
+}
 
 export  function showChampionsInCards(arrayCharacters) {     //MOSTRA PERSONAGENS EM FORMA DE CARDS DENTRO DA CHARACTERS-DIV
     document.getElementById("characters-div").style.visibility = "visible";
@@ -132,73 +132,18 @@ export  function showChampionsInCards(arrayCharacters) {     //MOSTRA PERSONAGEN
   
     document.getElementById("see-characters-here").innerHTML = championsInCards(arrayCharacters);
     
-};
-
-export function searchChampionsByName(arrayCharactersForFilter, whatTheUserWantsTosearch){  //PESQUISA DENTRO DOS DADOS OQUE O USUÁRIO FORNECE
-    return arrayCharactersForFilter.filter(championFilter => championFilter.name.toUpperCase().includes(whatTheUserWantsTosearch.toUpperCase())); 
-};
-
-export function championsInCardsForSort(arrayCharactersForSort, objectWithOtherObjectsInside){
-
-    let template = "";
-
-      for (let persona of arrayCharactersForSort) {
-      template += `
-      <div class="champions-card">
-      <p class="image-splash"><img class="image common" src="${objectWithOtherObjectsInside[persona].splash}"></p>
-      <p class="name common">Name: ${persona}</p>
-      <p class="title common">${objectWithOtherObjectsInside[persona].title}</p>
-      <p class="role common">Role: ${objectWithOtherObjectsInside[persona].tags}</p>
-      <p class="info-champ common">Attack: ${objectWithOtherObjectsInside[persona].info.attack}</p>
-      <p class="info-champ common">Defense: ${objectWithOtherObjectsInside[persona].info.defense}</p>
-      <p class="info-champ common">Magic: ${objectWithOtherObjectsInside[persona].info.magic}</p>
-      <p class="info-champ common">Difficulty: ${objectWithOtherObjectsInside[persona].info.difficulty}</p>
-      </div>
-      `;
-      };
-    return template;
-};
-
-export function showChampionsInCardsForSort(arrayCharactersForShowSort, objectWithOtherObjectsInsideForSort) {
-
-    document.getElementById("characters-div").style.visibility = "visible";
-    document.getElementById("characters-div").style.display = "block";
-  
-    document.getElementById("lol-tool-intro").style.visibility = "hidden";
-    document.getElementById("lol-tool-intro").style.display = "none";
-  
-    document.getElementById("about-the-game-div").style.visibility = "hidden";
-    document.getElementById("about-the-game-div").style.display = "none";
-  
-    document.getElementById("compare-champions").style.visibility = "hidden";
-    document.getElementById("compare-champions").style.display = "none";
-  
-    document.getElementById("youtube-media").style.visibility = "hidden";
-    document.getElementById("youtube-media").style.display = "none";
-  
-    document.getElementById("see-characters-here").innerHTML = "";
-  
-    document.getElementById("see-characters-here").innerHTML = championsInCardsForSort(arrayCharactersForShowSort, objectWithOtherObjectsInsideForSort);
+}
 
 
-};
+const userInput = document.getElementById('search-entry');
+export function searchChampionsByName(arrayCharactersForFilter){  //PESQUISA DENTRO DOS DADOS OQUE O USUÁRIO FORNECE
+    return arrayCharactersForFilter.filter(champion => champion.name.toUpperCase().includes(userInput.value.toUpperCase())); 
+}
 
-export function sortCharactersAZ(ObjectCharactersForSortAZ) {  //ORDENA OS PERSONAGENS EM ORDERM AZ
-    let arrayPersonas = [];
-
-      for (let persona in ObjectCharactersForSortAZ){    
-      arrayPersonas.push(persona);   
-      };
-
-    return arrayPersonas.sort();
-};
+export function sortCharactersAZ(arrayCharactersForSortAZ) {  //ORDENA OS PERSONAGENS EM ORDERM AZ
+return arrayCharactersForSortAZ.slice().sort();  
+}
     
-export function sortCharactersZA(ObjectCharactersForSortZA) {  //ORDENA OS PERSONAGENS EM ORDERM ZA
-    let arrayPersonas = [];
-
-    for (let persona in ObjectCharactersForSortZA){    
-    arrayPersonas.push(persona);   
-    };
-
-    return arrayPersonas.sort().reverse();
-};
+export function sortCharactersZA(arrayCharactersForSortZA) {  //ORDENA OS PERSONAGENS EM ORDERM ZA
+return arrayCharactersForSortZA.slice().sort().reverse();  
+}
