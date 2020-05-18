@@ -21,19 +21,23 @@ A imagem abaixo mostra a página inicial do League of Legends Tool. Ela contém 
 
 Nesta próxima imagem, fomos direcionados para a página "Sobre o Jogo". Nela obtemos uma breve introdução do que é o jogo. 
 
-  <img src=".jpg" title="Página sobre o jogo">
+  <img src="Imagens\Sobre o Jogo.png" title="Página sobre o jogo">
 
 Aqui, vemos a página dos "Campeões". Nela mostramos todos os campeões disponíveis para escolha no jogo. A maneira escolhida para mostrar cada campeão foi de cards individuais. Em cada um podemos ver as características mais importantes como, por exemplo, seu nome, role (função), níveis de força, magia e defesa. Nessa página é possível também ordenar os cards de A-Z e Z-A, além de buscar os cards pelo nome dos campeões. 
 
-  <img src=".jpg" title="Página de campeões">
+  <img src="Imagens\Campeões.png" title="Página de campeões">
+  <img src="Imagens\Campeões ZA.png" title="Campeões de Z - A">
+  <img src="Imagens\Campeões Busca.png" title="Campeões que possuem Le no nome">
+  <img src="Imagens\Campeões Busca 2.png" title="Campeões que possuem Lee no nome">
 
 A seguir, vemos o ambiente onde é possível realizar alguns cálculos com as habilidades dos campeões. Podemos descobrir quantos porcento dos capeões possuem um poder de ataque superior à 5, por exemplo.
 
-  <img src=".jpg" title="Página de dados">
+  <img src="Imagens\Dados.png" title="Página de dados">
+  <img src="Imagens\Dados 2.png" title="Página de dados">
 
 Por fim, neste último ambiente, temos acesso à informações sobre algumas mulheres youtubers que são tembém jogadoras de LoL. Essa página foi criada pensando no efeito positivo que teria sobre a comunidade feminina jogadora de League of Legends. Pois em nossa pesquisa com os usuários, foi relatado como uma das maiores dificuldades do jogo o recorrente machismo e o preconceito contra mulheres por parte dos próprios jogadores! Logo, pensamos em criar um ambiente que incentive mais que mulheres tomem seu espaço no jogo. 
 
-  <img src=".jpg" title="Página de youtubers">
+  <img src="Imagens\Youtubers.png" title="Página de youtubers">
 ----------------------------------------------------------------
 
 # Data Lovers
