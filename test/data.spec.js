@@ -95,8 +95,16 @@ expect(searchChampionsByName(championsArray, "D")).toEqual(resultForSearchFuncti
 });
 
 });
-
-const whatTheUserWantsTosearch = "A";
+//-----------------------------------------------------------
+const whatTheUserWantsTosearch = [
+  {
+    id: 'A',
+    name: 'A',
+    title: 'the Lady of Luminosity-0',
+    info: { attack: 1, defense: 2, magic: 3, difficulty: 4 },
+    tags: [ 'Mage-0', 'Support-0' ]
+  }
+];
 
 describe('searchChampionsByName', () => {
 
@@ -104,8 +112,8 @@ describe('searchChampionsByName', () => {
     expect(typeof searchChampionsByName).toBe('function');
   });
 
-  it('should return "A" when user types "A"', () => {
-    let result = searchChampionsByName(championsArray, whatTheUserWantsTosearch)
-    expect(result[0].name).toEqual(whatTheUserWantsTosearch);
+  it('should return an array including what the user searched', () => {
+    let result = searchChampionsByName(championsArray, "A")
+    expect(result).toEqual(whatTheUserWantsTosearch);
   });
 });
