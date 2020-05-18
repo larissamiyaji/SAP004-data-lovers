@@ -2,9 +2,10 @@
 
 ## Índice
 * [1. Prefácio](#1-prefácio)
-* [2. Nosso Propósito](#1-nosso-propósito)
-* [3. Navegação](#1-navegação)
-* [4. Demonstração](#1-demonstração)
+* [2. Nosso Propósito](#2-nosso-propósito)
+* [3. Navegação](#3-navegação)
+* [4. Demonstração](#4-demonstração)
+* [5. Informações Técnicas](#5-informações-tecnicas)
 
 ## 1. Prefácio
 
@@ -18,7 +19,7 @@ Temos como objetivo principal auxiliar as jogadoras a conhecerem melhor cada um 
 
 A imagem abaixo mostra a página inicial do League of Legends Tool. Ela contém informações sobre o propósito de nossa ferramenta, e mais 4 botões que direcionam para os outros ambientes.
 
-  <img src="Imagens\Página Inicial.png" title="Página inicial - League Of Legends Tool">
+  <img src="Imagens\Página Inicial.png" width="50px" title="Página inicial - League Of Legends Tool">
 
 Nesta próxima imagem, fomos direcionados para a página "Sobre o Jogo". Nela obtemos uma breve introdução do que é o jogo. 
 
@@ -36,7 +37,7 @@ A seguir, vemos o ambiente onde é possível realizar alguns cálculos com as ha
   <img src="Imagens\Dados.png" title="Página de dados">
   <img src="Imagens\Dados 2.png" title="Página de dados">
 
-Por fim, neste último ambiente, temos acesso à informações sobre algumas mulheres youtubers que são tembém jogadoras de LoL. Essa página foi criada pensando no efeito positivo que teria sobre a comunidade feminina jogadora de League of Legends. Pois em nossa pesquisa com os usuários, foi relatado como uma das maiores dificuldades do jogo o recorrente machismo e o preconceito contra mulheres por parte dos próprios jogadores! Logo, pensamos em criar um ambiente que incentive mais que mulheres tomem seu espaço no jogo. 
+Por fim, neste último ambiente, temos acesso à informações sobre algumas mulheres youtubers que são também jogadoras de LoL. Essa página foi criada pensando no efeito positivo que teria sobre a comunidade feminina jogadora de League of Legends. Pois em nossa pesquisa com os usuários, foi relatado como uma das maiores dificuldades do jogo o recorrente machismo e o preconceito contra mulheres por parte dos próprios jogadores! Logo, pensamos em criar um ambiente que incentive mais que mulheres tomem seu espaço no jogo. 
 
   <img src="Imagens\Youtubers.png" title="Página de youtubers">
 
