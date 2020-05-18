@@ -17,7 +17,7 @@ Temos como objetivo principal auxiliar as jogadoras a conhecerem melhor cada um 
 
 A imagem abaixo mostra a página inicial do League of Legends Tool. Ela contém informações sobre o propósito de nossa ferramenta, e mais 4 botões que direcionam para os outros ambientes.
 
-  <img src="wallpaper" width="350" title="hover text">
+  <img src="wallpaper.jpg" title="Página inicial - League Of Legends Tool">
 
 
 
