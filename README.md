@@ -4,6 +4,7 @@
 * [1. Prefácio](#1-prefácio)
 * [2. Nosso Propósito](#1-nosso-propósito)
 * [3. Navegação](#1-navegação)
+* [4. Demonstração](#1-demonstração)
 
 ## 1. Prefácio
 
@@ -38,6 +39,11 @@ A seguir, vemos o ambiente onde é possível realizar alguns cálculos com as ha
 Por fim, neste último ambiente, temos acesso à informações sobre algumas mulheres youtubers que são tembém jogadoras de LoL. Essa página foi criada pensando no efeito positivo que teria sobre a comunidade feminina jogadora de League of Legends. Pois em nossa pesquisa com os usuários, foi relatado como uma das maiores dificuldades do jogo o recorrente machismo e o preconceito contra mulheres por parte dos próprios jogadores! Logo, pensamos em criar um ambiente que incentive mais que mulheres tomem seu espaço no jogo. 
 
   <img src="Imagens\Youtubers.png" title="Página de youtubers">
+
+## Demonstração
+
+A seguir, um breve vídeo com a demonstração de como funciona melhor a navegação do site.
+
 ----------------------------------------------------------------
 
 # Data Lovers
