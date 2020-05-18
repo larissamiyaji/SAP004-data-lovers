@@ -53,7 +53,7 @@ export  function showCompChan(arraycharacterForAggregateCalculation) {
         let resultForTheInformationProvided = percentageByTypeAndLevel(typeOfInfo, levelValue, arraycharacterForAggregateCalculation);
     
         document.getElementById("see-data-here").innerHTML = resultForTheInformationProvided + "% dos Campeões tem " +typeOfInfo + " maior igual que " + levelValue;
-    }      
+    }    
 }
 
 export function showAboutGame() {
@@ -134,16 +134,71 @@ export  function showChampionsInCards(arrayCharacters) {     //MOSTRA PERSONAGEN
     
 }
 
+export function searchChampionsByName(arrayCharactersForFilter, whatTheUserWantsTosearch){  //PESQUISA DENTRO DOS DADOS OQUE O USUÁRIO FORNECE
+    return (arrayCharactersForFilter || []).filter(championFilter => championFilter.name.toUpperCase().includes(whatTheUserWantsTosearch.toUpperCase())); 
+}           // There is some moment where the input is undefined so you have to set an empty array as its default value when you call array.prototype.filter.
 
-const userInput = document.getElementById('search-entry');
-export function searchChampionsByName(arrayCharactersForFilter){  //PESQUISA DENTRO DOS DADOS OQUE O USUÁRIO FORNECE
-    return arrayCharactersForFilter.filter(champion => champion.name.toUpperCase().includes(userInput.value.toUpperCase())); 
+export function championsInCardsForSort(arrayCharactersForSort, objectWithOtherObjectsInside){
+
+    let template = "";
+
+      for (let persona of arrayCharactersForSort) {
+      template += `
+      <div class="champions-card">
+      <p class="image-splash"><img class="image common" src="${objectWithOtherObjectsInside[persona].splash}"></p>
+      <p class="name common">Name: ${persona}</p>
+      <p class="title common">${objectWithOtherObjectsInside[persona].title}</p>
+      <p class="role common">Role: ${objectWithOtherObjectsInside[persona].tags}</p>
+      <p class="info-champ common">Attack: ${objectWithOtherObjectsInside[persona].info.attack}</p>
+      <p class="info-champ common">Defense: ${objectWithOtherObjectsInside[persona].info.defense}</p>
+      <p class="info-champ common">Magic: ${objectWithOtherObjectsInside[persona].info.magic}</p>
+      <p class="info-champ common">Difficulty: ${objectWithOtherObjectsInside[persona].info.difficulty}</p>
+      </div>
+      `;
+      }
+    return template;
 }
 
-export function sortCharactersAZ(arrayCharactersForSortAZ) {  //ORDENA OS PERSONAGENS EM ORDERM AZ
-return arrayCharactersForSortAZ.slice().sort();  
+export function showChampionsInCardsForSort(arrayCharactersForShowSort, objectWithOtherObjectsInsideForSort) {
+
+    document.getElementById("characters-div").style.visibility = "visible";
+    document.getElementById("characters-div").style.display = "block";
+  
+    document.getElementById("lol-tool-intro").style.visibility = "hidden";
+    document.getElementById("lol-tool-intro").style.display = "none";
+  
+    document.getElementById("about-the-game-div").style.visibility = "hidden";
+    document.getElementById("about-the-game-div").style.display = "none";
+  
+    document.getElementById("compare-champions").style.visibility = "hidden";
+    document.getElementById("compare-champions").style.display = "none";
+  
+    document.getElementById("youtube-media").style.visibility = "hidden";
+    document.getElementById("youtube-media").style.display = "none";
+  
+    document.getElementById("see-characters-here").innerHTML = "";
+  
+    document.getElementById("see-characters-here").innerHTML = championsInCardsForSort(arrayCharactersForShowSort, objectWithOtherObjectsInsideForSort);
+
+
+}
+
+export function sortCharactersAZ(ObjectCharactersForSortAZ) {  //ORDENA OS PERSONAGENS EM ORDERM AZ
+    let arrayPersonas = [];
+
+      for (let persona in ObjectCharactersForSortAZ){    
+      arrayPersonas.push(persona);   
+      }
+
+    return arrayPersonas.sort();
 }
     
-export function sortCharactersZA(arrayCharactersForSortZA) {  //ORDENA OS PERSONAGENS EM ORDERM ZA
-return arrayCharactersForSortZA.slice().sort().reverse();  
+export function sortCharactersZA(ObjectCharactersForSortZA) {  //ORDENA OS PERSONAGENS EM ORDERM ZA
+    let arrayPersonas = [];
+
+    for (let persona in ObjectCharactersForSortZA){    
+    arrayPersonas.push(persona);   
+    }
+
+    return arrayPersonas.sort().reverse();
 }
