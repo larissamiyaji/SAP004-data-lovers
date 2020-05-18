@@ -17,7 +17,6 @@ let data = {
           },
         tags: ["Mage", "Support"],
         },
-
         "Lux1": {
         id: "Lux1",
         name: "Lux",
@@ -30,7 +29,6 @@ let data = {
           },
         tags: ["Mage", "Support"],
         },
-
         "Lux2": {
         id: "Lux2",
         name: "Lux",
@@ -45,7 +43,6 @@ let data = {
         },
           }   
   };
-
 const championsArray = Object.values(data.data);
 //[ { }, { }, { } ] 
 //console.log(championsArray);
@@ -63,11 +60,8 @@ if(persona.info.magic >= 5){
 };
 console.log(names.length);
 console.log(total.length);
-
 let porcentagem = (names.length * 100) / total.length;
 console.log(parseInt(porcentagem));
-
-
   /*Quantos por cento tem:
     attack >= X
     defense >= X
@@ -76,7 +70,7 @@ console.log(parseInt(porcentagem));
 
 
     //-----------------------------------------------------------------------------------------------------------------------
-
+/*
 ///////---------Estudando para refatorar para fazer filtro
 let data = {
   "type": "champion",
