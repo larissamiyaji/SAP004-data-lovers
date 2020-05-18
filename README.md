@@ -20,7 +20,7 @@ Temos como objetivo principal auxiliar as jogadoras a conhecerem melhor cada um 
 
 ## 3. Protótipo de Baixa Fidelidade
 
-Para acessar ao protótipo inicial criado para o projeto, clique <a src="https://marvelapp.com/e614gih">aqui<a/>
+Para acessar ao protótipo inicial criado para o projeto, clique <a href="https://marvelapp.com/e614gih">aqui<a/>
 
 
 
