@@ -2,16 +2,20 @@
 
 ## Índice
 * [1. Prefácio](#1-prefácio)
-*
-*
+* [2. Nosso Propósito](#1-nosso-propósito)
+* [3. Navegação](#1-navegação)
 
 ## 1. Prefácio
 
-O League of Legends Tool é uma ferramenta pensada e criada tendo como público alvo as jogadoras do jogo League of Legends, também conhecido mundialmente como LoL. O LoL é um jogo onde 
+O League of Legends Tool é uma ferramenta pensada e criada tendo como público alvo as jogadoras de League of Legends, também conhecido mundialmente como LoL. O LoL é um jogo de estratégia onde duas equipes se enfrentam com um único objetivo em comum, destruir a base uma da outra. 
 
+## 2. Nosso Propósito
 
+Temos como objetivo principal auxiliar as jogadoras a conhecerem melhor cada um dos campeões disponíveis no jogo. Para que assim, possam escolher com mais sabedoria seu personegem e saber o que cada campeão tem a oferecer em suas partidas. Para que isso seja possível, juntamos diversas informações e características dos personagens e mostramos tudo em um único lugar!
 
+## 3. Navegação
 
+Essa imagem mostra a página inicial do League of Legends Tool. Ela contém informações sobre o propósito de nossa ferramenta.
 
 
 
