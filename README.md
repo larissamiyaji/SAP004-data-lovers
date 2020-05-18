@@ -15,9 +15,9 @@ Temos como objetivo principal auxiliar as jogadoras a conhecerem melhor cada um 
 
 ## 3. Navegação
 
-Essa imagem mostra a página inicial do League of Legends Tool. Ela contém informações sobre o propósito de nossa ferramenta.
+A imagem abaixo mostra a página inicial do League of Legends Tool. Ela contém informações sobre o propósito de nossa ferramenta, e mais 4 botões que direcionam para os outros ambientes.
 
-
+  <img src="wallpaper" width="350" title="hover text">
 
 
 
