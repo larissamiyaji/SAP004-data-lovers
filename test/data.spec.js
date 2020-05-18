@@ -95,7 +95,7 @@ expect(searchChampionsByName(championsArray, "D")).toEqual(resultForSearchFuncti
 });
 
 });
-//-----------------------------------------------------------
+
 const whatTheUserWantsTosearch = [
   {
     id: 'A',
