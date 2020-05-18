@@ -17,16 +17,24 @@ Temos como objetivo principal auxiliar as jogadoras a conhecerem melhor cada um 
 
 A imagem abaixo mostra a página inicial do League of Legends Tool. Ela contém informações sobre o propósito de nossa ferramenta, e mais 4 botões que direcionam para os outros ambientes.
 
-  <img src="wallpaper.jpg" title="Página inicial - League Of Legends Tool">
+  <img src="\Imagens\Página Inicial.png.jpg" title="Página inicial - League Of Legends Tool">
 
+Nesta próxima imagem, fomos direcionados para a página "Sobre o Jogo". Nela obtemos uma breve introdução do que é o jogo. 
 
+  <img src=".jpg" title="Página sobre o jogo">
 
+Aqui, vemos a página dos "Campeões". Nela mostramos todos os campeões disponíveis para escolha no jogo. A maneira escolhida para mostrar cada campeão foi de cards individuais. Em cada um podemos ver as características mais importantes como, por exemplo, seu nome, role (função), níveis de força, magia e defesa. Nessa página é possível também ordenar os cards de A-Z e Z-A, além de buscar os cards pelo nome dos campeões. 
 
+  <img src=".jpg" title="Página de campeões">
 
+A seguir, vemos o ambiente onde é possível realizar alguns cálculos com as habilidades dos campeões. Podemos descobrir quantos porcento dos capeões possuem um poder de ataque superior à 5, por exemplo.
 
+  <img src=".jpg" title="Página de dados">
 
+Por fim, neste último ambiente, temos acesso à informações sobre algumas mulheres youtubers que são tembém jogadoras de LoL. Essa página foi criada pensando no efeito positivo que teria sobre a comunidade feminina jogadora de League of Legends. Pois em nossa pesquisa com os usuários, foi relatado como uma das maiores dificuldades do jogo o recorrente machismo e o preconceito contra mulheres por parte dos próprios jogadores! Logo, pensamos em criar um ambiente que incentive mais que mulheres tomem seu espaço no jogo. 
 
-
+  <img src=".jpg" title="Página de youtubers">
+----------------------------------------------------------------
 
 # Data Lovers
 
