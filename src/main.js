@@ -1,6 +1,6 @@
 import { showAboutGame,
          showCompChan, 
-         showYoutubers, 
+         showYoutubers,
          showChampionsInCards,
          searchChampionsByName, 
          sortCharactersAZ,
@@ -17,9 +17,15 @@ const aboutGameButton = document.getElementById("about-game");
 const compareChampionButton = document.getElementById("compare-champ-but");
 const youtubeButton = document.getElementById("but-youtube");
 const buttonShowChampions = document.getElementById("show-champions");
-const searchButton =document.getElementById('search-button');
+const searchButton = document.getElementById('search-button');
 const radioAZ = document.getElementById("AZ");
 const radioZA = document.getElementById("ZA");
+const userInput = document.getElementById("search-entry");
+userInput.addEventListener("keypress" , (event) => {
+  if (event.keyCode === 13) {
+    showChampionsInCards(searchChampionsByName(championsArray))
+  }
+})
 
 aboutGameButton.addEventListener("click", showAboutGame);
 compareChampionButton.addEventListener("click", () => showCompChan(championsArray));
@@ -35,7 +41,6 @@ searchButton.addEventListener('click', () => {
 radioAZ.addEventListener("click", () => showChampionsInCardsForSort(sortCharactersAZ(champion), champion));
 radioZA.addEventListener("click", () => showChampionsInCardsForSort(sortCharactersZA(champion), champion));
 
-const userInput = document.getElementById("search-entry");
 userInput.addEventListener("keypress" , (event) => {
   if (event.keyCode === 13) {
     const inputValueToSearch = document.getElementById("search-entry").value;
@@ -71,12 +76,8 @@ userInput.addEventListener("keypress" , (event) => {
 
 
 
-<<<<<<< HEAD
 const compareChampionButton = document.getElementById("compare-champ-but");
 compareChampionButton.addEventListener("click", showCompChan);
-=======
-
->>>>>>> a36c45e4ad1362ba75ac5ad39eecdb281b14f7f9
 
 
 
