@@ -4,12 +4,10 @@
 * [1. Prefácio](#1-prefácio)
 * [2. Nosso Propósito](#2-nosso-propósito)
 * [3. Histórias de Usuário](#3-histórias-de-usuário)
-* [4. Protótipo de Baixa Fidelidade](#3-protótipo)
-
-
-* [. Navegação](#3-navegação)
-* [. Demonstração](#4-demonstração)
-* [. Informações Técnicas](#5-informações-tecnicas)
+* [4. Protótipo de Baixa Fidelidade](#4-protótipo)
+* [5. Teste de Usabilidade](#5-teste-de-usabilidade)
+* [6. Demonstração](#6-demonstração)
+* [7. Informações Técnicas](#7-informações-tecnicas)
 
 ## 1. Prefácio
 
@@ -36,53 +34,13 @@ Eu como usuário desejo filtrar meus personagens de acordo com role(função) e 
 * História de Usuário 3 - Ordenar personagens.
 Eu como usuário desejo ordenar os personagens em ordem alfabética pelo nome, tanto em ordem crescente quanto decrescente. 
 
-
-
 ## 4. Protótipo de Baixa Fidelidade
 
 Para acessar ao protótipo inicial criado para o projeto, clique <a href="https://marvelapp.com/e614gih">aqui</a>
 
+## 5. Teste de Usabilidade
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## . Navegação
-
-A imagem abaixo mostra a página inicial do League of Legends Tool. Ela contém informações sobre o propósito de nossa ferramenta, e mais 4 botões que direcionam para os outros ambientes.
-
-
-Nesta próxima imagem, fomos direcionados para a página "Sobre o Jogo". Nela obtemos uma breve introdução do que é o jogo. 
-
-
-Aqui, vemos a página dos "Campeões". Nela mostramos todos os campeões disponíveis para escolha no jogo. A maneira escolhida para mostrar cada campeão foi de cards individuais. Em cada um podemos ver as características mais importantes como, por exemplo, seu nome, role (função), níveis de força, magia e defesa. Nessa página é possível também ordenar os cards de A-Z e Z-A, além de buscar os cards pelo nome dos campeões. 
-
-
-
-A seguir, vemos o ambiente onde é possível realizar alguns cálculos com as habilidades dos campeões. Podemos descobrir quantos porcento dos capeões possuem um poder de ataque superior à 5, por exemplo.
-
-
-Por fim, neste último ambiente, temos acesso à informações sobre algumas mulheres youtubers que são também jogadoras de LoL. Essa página foi criada pensando no efeito positivo que teria sobre a comunidade feminina jogadora de League of Legends. Pois em nossa pesquisa com os usuários, foi relatado como uma das maiores dificuldades do jogo o recorrente machismo e o preconceito contra mulheres por parte dos próprios jogadores! Logo, pensamos em criar um ambiente que incentive mais que mulheres tomem seu espaço no jogo. 
-
+Durante a desenvolvimento do projeto, criamos outro <a href="https://forms.gle/qX1Jeb9ibYCqJa1x5">formulário</a> para sabermos o que os usuários gostariam de acrescentar ou alterar. Com base nessa nova pesquisa foi constatado que o site possui uma navegação bem intuitiva e com as informações que eles consideram importantes.   
 
 ## . Demonstração
 
