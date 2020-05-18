@@ -1,3 +1,9 @@
+# League Of Legends Tool
+
+## O que é?
+
+O League of Legens Tool é uma ferramenta pensada e criada com o público alvo de jogadoras do jogo League of Legends, também conhecido mundialmente como LoL. 
+===============================================================================
 # Data Lovers
 
 ## Índice
