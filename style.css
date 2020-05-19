@@ -3,11 +3,7 @@
   font-family: "Cinzel", serif;
 }
 html {
-<<<<<<< HEAD
   background-image: url("wallpaper1.jpg");
-=======
-  background-image: url("wallpaper.jpg");
->>>>>>> ba50d46e9328d9eae86a00f489cd24e68a321188
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
