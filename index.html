@@ -1,162 +1,222 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="lol.ico" />
+    <title>League of Legends Tool</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="lol.ico" />
-  <title>League of Legends Tool</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <div class="header-link">
-    <a href="index.html">
-      <header title="League of Legends Tool - Main Page">League of Legends Tool</header>
-    </a>
-  </div>
-
-  <nav class="menu">
-    <ul>
-      <button id="about-game" class="style-buttons for-hover">
-        <li>Sobre o Jogo</li>
-      </button>
-
-      <button id="show-champions" class="style-buttons for-hover">
-        <li>Campeões</li>
-      </button>
-
-      <button id="compare-champ-but" class="style-buttons for-hover">
-        <li>Dados</li>
-      </button>
-
-      <button id="but-youtube" class="style-buttons for-hover">
-        <li>Youtube</li>
-      </button>
-    </ul>
-  </nav>
-
-  <section>
-    <main>
-      <div id="lol-tool-intro" class="style-view">
-        <h1>League of Legends Tool</h1>
-        <p class="for-background-text">O League of Legends Tool é um site que reúne as informações mais importantes
-          e mais requisitadas pelas jogadoras do, tão famoso, League of Legends. Aqui é possível
-          encontrar desde informações mais básicas sobre cada um dos Campeões, até
-          informações sobre youtubers mulheres que também são jogadoras de League of Legends.</p>
-      </div>
-    </main>
-  </section>
-
-  <section id="about-the-game-div" class="style-view insivible-class">
-    <h1>Sobre o Jogo</h1>
-    <p class="for-background-text">League of Legends é um jogo de estratégia em que duas equipes de cinco
-      poderosos Campeões se enfrentam para destruir a base uma da outra. Escolha
-      entre mais de 140 Campeões para realizar jogadas épicas, assegurar abates
-      e destruir torres conforme você luta até a vitória.</p>
-  </section>
-
-  <section id="characters-div" class="style-view insivible-class">
-    <h1>Campeões</h1>
-    <div id="order-search-buttons">
-      <div id="sort-div">
-        <legend>Select One:</legend>
-        <label>
-          <input id="AZ" type="radio" name="ordination" value="AZ"> A-Z
-        </label>
-        <label>
-          <input id="ZA" type="radio" name="ordination" value="ZA"> Z-A
-        </label>
-      </div>
-
-      <div id="search-div">
-        <input type="text" id="search-entry" placeholder="Digite aqui...">
-        <button id="search-button">Buscar</button>
-      </div>
+  <body>
+    <div class="header-link">
+      <a href="index.html">
+        <header title="League of Legends Tool - Main Page">
+          League of Legends Tool
+        </header>
+      </a>
     </div>
-    <div id="see-characters-here"></div>
-  </section>
 
-  <section id="compare-champions" class="insivible-class style-view">
-    <h1>Dados sobre os Campeões</h1>
-    <div id="div-skill-number">
-      <p class="for-display">Quantos por cento de campeões tem </p>
-      <select id="types-of-information" class="for-display" name="types-of-information">
-        <option value="attack">Attack</option>
-        <option value="defense">Defense</option>
-        <option value="magic">Magic</option>
-        <option value="difficulty">Difficulty</option>
-      </select>
-      <p class="for-display" id="greater-than">maior igual que </p>
-      <select id="level-of-information" class="for-display" name="level-of-information">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-      </select>
-    </div>
-    <button id="see-data-here-button" class="for-button for-hover">Mostrar dados</button>
-    <div id="see-data-here"></div>
-    <div id="see-champions-with-corresponding-data"></div>
-  </section>
+    <nav class="menu">
+      <ul>
+        <button id="about-game" class="style-buttons for-hover">
+          <li>Sobre o Jogo</li>
+        </button>
 
-  <section id="youtube-media" class="style-view insivible-class">
-    <h1>Youtubers Mulheres</h1>
-    <div class="youtube">
-      <div class="youtube-box">
-        <div class="youtube-info">
-          <h1 for="thaiga">Thaiga</h1>
-          <p>Bianca Thaiga é, além de uma streamer<br> e analista da Superliga ABCDE,<br> o talento mais jovem da Superliga.<br> E também embaixadora na Pain Gaming.</p>
+        <button id="show-champions" class="style-buttons for-hover">
+          <li>Campeões</li>
+        </button>
+
+        <button id="compare-champ-but" class="style-buttons for-hover">
+          <li>Dados</li>
+        </button>
+
+        <button id="but-youtube" class="style-buttons for-hover">
+          <li>Youtube</li>
+        </button>
+      </ul>
+    </nav>
+
+    <section>
+      <main>
+        <div id="lol-tool-intro" class="style-view">
+          <h1>League of Legends Tool</h1>
+          <p class="for-background-text">
+            O League of Legends Tool é um site que reúne as informações mais
+            importantes e mais requisitadas pelas jogadoras do, tão famoso,
+            League of Legends. Aqui é possível encontrar desde informações mais
+            básicas sobre cada um dos Campeões, até informações sobre youtubers
+            mulheres que também são jogadoras de League of Legends.
+          </p>
+        </div>
+      </main>
+    </section>
+
+    <section id="about-the-game-div" class="style-view insivible-class">
+      <h1>Sobre o Jogo</h1>
+      <p class="for-background-text">
+        League of Legends é um jogo de estratégia em que duas equipes de cinco
+        poderosos Campeões se enfrentam para destruir a base uma da outra.
+        Escolha entre mais de 140 Campeões para realizar jogadas épicas,
+        assegurar abates e destruir torres conforme você luta até a vitória.
+      </p>
+    </section>
+
+    <section id="characters-div" class="style-view insivible-class">
+      <h1>Campeões</h1>
+      <div id="order-search-buttons">
+        <div id="sort-div">
+          <legend>Select One:</legend>
+          <label>
+            <input id="AZ" type="radio" name="ordination" value="AZ" /> A-Z
+          </label>
+          <label>
+            <input id="ZA" type="radio" name="ordination" value="ZA" /> Z-A
+          </label>
+        </div>
+
+        <div id="search-div">
+          <input type="text" id="search-entry" placeholder="Digite aqui..." />
+          <button id="search-button">Buscar</button>
+        </div>
+      </div>
+      <div id="see-characters-here"></div>
+    </section>
+
+    <section id="compare-champions" class="insivible-class style-view">
+      <h1>Dados sobre os Campeões</h1>
+      <div id="div-skill-number">
+        <p class="for-display">Quantos por cento de campeões tem</p>
+        <select
+          id="types-of-information"
+          class="for-display"
+          name="types-of-information"
+        >
+          <option value="attack">Attack</option>
+          <option value="defense">Defense</option>
+          <option value="magic">Magic</option>
+          <option value="difficulty">Difficulty</option>
+        </select>
+        <p class="for-display" id="greater-than">maior igual que</p>
+        <select
+          id="level-of-information"
+          class="for-display"
+          name="level-of-information"
+        >
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <button id="see-data-here-button" class="for-button for-hover">
+        Mostrar dados
+      </button>
+      <div id="see-data-here"></div>
+      <div id="see-champions-with-corresponding-data"></div>
+    </section>
+
+    <section id="youtube-media" class="style-view insivible-class">
+      <h1>Youtubers Mulheres</h1>
+      <div class="youtube">
+        <div class="youtube-box">
+          <div class="youtube-info">
+            <h1 for="thaiga">Thaiga</h1>
+            <p>
+              Bianca Thaiga é, além de uma streamer<br />
+              e analista da Superliga ABCDE,<br />
+              o talento mais jovem da Superliga.<br />
+              E também embaixadora na Pain Gaming.
+            </p>
             <div class="video">
-              <iframe src="https://www.youtube.com/embed/4fbjbOgjsqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/4fbjbOgjsqs"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
-          <p><a href="https://www.youtube.com/channel/UC81CElb6SqJcOMaCAC-fwbQ">YouTube</a><br>
-          <a href="https://www.facebook.com/thaigakuma/">Facebook</a><br>
-          <a href="https://www.instagram.com/biancalula/?hl=pt-br">Instagram</a></p>
-        </div>
-      </div>
-      <div class="youtube-box">
-        <div class="youtube-info">
-          <h1 for="riyuuka">Riyuuka</h1>
-          <p>Mônica Riyuuka é streamer<br> na Pain Gaming. O conteúdo do seu<br> canal contém, também, vlogs,<br> Q&A sobre gameplay, dicas e outros</p>
-          <div class="video">
-            <iframe src="https://www.youtube.com/embed/ch3D9ntZUgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+              <a href="https://www.youtube.com/channel/UC81CElb6SqJcOMaCAC-fwbQ"
+                >YouTube</a
+              ><br />
+              <a href="https://www.facebook.com/thaigakuma/">Facebook</a><br />
+              <a href="https://www.instagram.com/biancalula/?hl=pt-br"
+                >Instagram</a
+              >
+            </p>
           </div>
-          <p><a href="https://www.youtube.com/channel/UC4X086ysoXD6-gO_0sdkqXw">YouTube</a><br>
-          <a href="https://www.facebook.com/riyuuka/">Facebook</a><br>
-          <a href="https://www.instagram.com/riyuuka/?fbclid=IwAR2T8bH63zKcuS6CxJgOmVyH8T0W94zhCSn5sUu4LPujUhPfnVgaK2N1iq4">Instagram</a></p>
         </div>
-      </div>
-      <div class="youtube-box">
-        <div class="youtube-info">
-          <h1 for="queen">Queen B</h1>
-          <p>Raphaela Marques Laet é uma streamer,<br> youtuber, pro-gamer e entertainer. Em seu<br> canal é possível encontrar não somente<br> sobre  LoL, mas outros jogos também </p>
-          <div class="video">
-            <iframe src="https://www.youtube.com/embed/WV74COepTmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="youtube-box">
+          <div class="youtube-info">
+            <h1 for="riyuuka">Riyuuka</h1>
+            <p>
+              Mônica Riyuuka é streamer<br />
+              na Pain Gaming. O conteúdo do seu<br />
+              canal contém, também, vlogs,<br />
+              Q&A sobre gameplay, dicas e outros
+            </p>
+            <div class="video">
+              <iframe
+                src="https://www.youtube.com/embed/ch3D9ntZUgw"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p>
+              <a href="https://www.youtube.com/channel/UC4X086ysoXD6-gO_0sdkqXw"
+                >YouTube</a
+              ><br />
+              <a href="https://www.facebook.com/riyuuka/">Facebook</a><br />
+              <a
+                href="https://www.instagram.com/riyuuka/?fbclid=IwAR2T8bH63zKcuS6CxJgOmVyH8T0W94zhCSn5sUu4LPujUhPfnVgaK2N1iq4"
+                >Instagram</a
+              >
+            </p>
           </div>
-          <p><a href="https://www.youtube.com/user/binstantane">YouTube</a><br>
-          <a href="https://www.facebook.com/brinyyy">Facebook</a><br>
-          <a href="https://www.instagram.com/brinydelaet/">Instagram</a></p>
+        </div>
+        <div class="youtube-box">
+          <div class="youtube-info">
+            <h1 for="queen">Queen B</h1>
+            <p>
+              Raphaela Marques Laet é uma streamer,<br />
+              youtuber, pro-gamer e entertainer. Em seu<br />
+              canal é possível encontrar não somente<br />
+              sobre LoL, mas outros jogos também
+            </p>
+            <div class="video">
+              <iframe
+                src="https://www.youtube.com/embed/WV74COepTmM"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p>
+              <a href="https://www.youtube.com/user/binstantane">YouTube</a
+              ><br />
+              <a href="https://www.facebook.com/brinyyy">Facebook</a><br />
+              <a href="https://www.instagram.com/brinydelaet/">Instagram</a>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-  </section>
+    <footer class="made-by">Copyright (c) 2020 by Amanda e Larissa</footer>
+    <div id="root"></div>
 
-
-  <footer class="made-by">Copyright (c) 2020 by Amanda e Larissa</footer>
-  <div id="root"></div>
-
-
-  <script src="main.js" type="module"></script>
-</body>
-
+    <script src="main.js" type="module"></script>
+  </body>
 </html>
