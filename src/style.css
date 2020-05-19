@@ -3,7 +3,11 @@
   font-family: "Cinzel", serif;
 }
 html {
+<<<<<<< HEAD
   background-image: url("wallpaper1.jpg");
+=======
+  background-image: url("wallpaper.jpg");
+>>>>>>> ba50d46e9328d9eae86a00f489cd24e68a321188
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
@@ -195,13 +199,9 @@ iframe{
   height: 280px;
   width: 500px;
 }
-#characters-div, #youtube-media{
-  /*background: #bda275c2; */
-}
 
 .for-background-text {
   background-color: #bda275;
-  /*background: #ffffff3d;*/
   border-radius: 10px;
   
 }
@@ -223,7 +223,6 @@ iframe{
 /*VERSÃO MOBILE*/
 @media only screen and (max-width: 800px) {
   html {
-    /* background-position: right top;  background-attachment: fixed; */   
     font-family: "Girassol";
     background-image: url("wallpaper-for-phone.jpg");
     background-repeat: no-repeat;

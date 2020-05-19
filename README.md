@@ -14,6 +14,7 @@ O League of Legends Tool é uma ferramenta pensada e criada tendo como público 
 
 ## 2. Nosso Propósito
 
+<<<<<<< HEAD
 Temos como objetivo principal auxiliar as jogadoras a conhecerem melhor cada um dos campeões disponíveis no jogo. Para que assim, possam escolher com mais sabedoria seu personegem e saber o que cada campeão tem a oferecer em suas partidas. Para que isso seja possível, juntamos diversas informações e características dos personagens e mostramos tudo em um único lugar!
 
 ## 3. Histórias de Usuário
@@ -34,6 +35,44 @@ Eu como usuário desejo filtrar meus personagens de acordo com role(função) e 
 Eu como usuário desejo ordenar os personagens em ordem alfabética pelo nome, tanto em ordem crescente quanto decrescente. 
 
 ## 4. Protótipo de Baixa Fidelidade
+=======
+Temos como objetivo principal auxiliar as jogadoras a conhecerem melhor cada um dos campeões disponíveis no jogo. Para que assim, possam escolher com mais sabedoria seu personagem e saber o que cada campeão tem a oferecer em suas partidas. Para que isso seja possível, juntamos diversas informações e características dos personagens e mostramos tudo em um único lugar!
+
+O processo de desenho de desenvolvimento dessa web application se deu baseado em pesquisa com usuários do jogo LOL, teste de usabilidade, conceitos de UX e UI como definição de persona e histórias de usuário; e o uso de metologia ágil para elaboração e cumprimento das HU's. 
+
+## 3. Histórias de Usuário
+
+Para podermos iniciar o projeto, criamos um <a href="https://forms.gle/6u3gsPZH42MYaTvf9">formulário</a> para captar informações e criar as histórias de usuários a seguir, que nos serviram como base para cada sprint do projeto.
+
+* História 1 - Ver informações importantes dos campeões.
+Eu como usuária de obter informações sobre nomes e habilidades dos personagens.
+•	Critério de aceitação: O usuário pode acessar informações básicas, como nome e habilidades, dos personagens.
+•	Definição de pronto: Acessar o site e poder ver as informações.
+
+* História de Usuário 2 - Filtrar personagens.
+Eu como usuário desejo filtrar meus personagens de acordo com role(função) e habilidades.
+•	Critério de aceitação: O usuário pode acessar informações filtradas de cordo com a função ou habilidades dos personagens.
+•	Definição de pronto: Acessar site e poder filtrar de acordo com habilidades e função.
+
+* História de Usuário 3 - Ordenar personagens.
+Eu como usuário desejo ordenar os personagens em ordem alfabética pelo nome, tanto em ordem crescente quanto decrescente. 
+•	Critério de aceitação: O usuário conseguir ordenar os nomes dos personagens alfabeticamente.
+•	Definição de pronto: Acessar site e poder ordenar os personagens de A-Z e Z-A. 
+>>>>>>> ba50d46e9328d9eae86a00f489cd24e68a321188
+
+Para acessar ao protótipo inicial criado para o projeto, clique <a href="https://marvelapp.com/e614gih">aqui</a>
+
+<<<<<<< HEAD
+## 5. Teste de Usabilidade
+
+Durante a desenvolvimento do projeto, criamos outro <a href="https://forms.gle/qX1Jeb9ibYCqJa1x5">formulário</a> para sabermos o que os usuários gostariam de acrescentar ou alterar. Com base nessa nova pesquisa foi constatado que algumas estilizações não ficaram muito agradáveis aos olhos, então trocamos algumas cores, para que a leitura fosse mais confortável. 
+
+## 6. Demonstração
+
+A seguir, um breve vídeo com a demonstração de como funciona melhor a navegação do site.
+
+=======
+## 4. Protótipo de Baixa Fidelidade
 
 Para acessar ao protótipo inicial criado para o projeto, clique <a href="https://marvelapp.com/e614gih">aqui</a>
 
@@ -45,6 +84,7 @@ Durante a desenvolvimento do projeto, criamos outro <a href="https://forms.gle/q
 
 A seguir, um breve vídeo com a demonstração de como funciona melhor a navegação do site.
 
+>>>>>>> ba50d46e9328d9eae86a00f489cd24e68a321188
 <a href="https://www.youtube.com/watch?v=mQaeHmNLw7c" rel="nofollow">
     <img src="Capa Demo.png" alt="Demonstração League Of Legends Tool" data-canonical-src="Capa Demo.png" style="max-width:100%;">
 </a>
