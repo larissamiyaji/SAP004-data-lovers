@@ -45,4 +45,4 @@ Durante a desenvolvimento do projeto, criamos outro <a href="https://forms.gle/q
 
 A seguir, um breve vídeo com a demonstração de como funciona melhor a navegação do site.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mQaeHmNLw7c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<img src="https://www.youtube.com/embed/mQaeHmNLw7c" alt="Demonstração - League Of Legends Tool" data-canonical-src="https://img.youtube.com/vi/utiLWBXmNQU/0.jpg" style="max-width:100%;">
