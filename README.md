@@ -39,7 +39,7 @@ Para acessar ao protótipo inicial criado para o projeto, clique <a href="https:
 
 ## 5. Teste de Usabilidade
 
-Durante a desenvolvimento do projeto, criamos outro <a href="https://forms.gle/qX1Jeb9ibYCqJa1x5">formulário</a> para sabermos o que os usuários gostariam de acrescentar ou alterar. Com base nessa nova pesquisa foi constatado que ...
+Durante a desenvolvimento do projeto, criamos outro <a href="https://forms.gle/qX1Jeb9ibYCqJa1x5">formulário</a> para sabermos o que os usuários gostariam de acrescentar ou alterar. Com base nessa nova pesquisa foi constatado que algumas estilizações não ficaram muito agradáveis aos olhos, então trocamos algumas cores, para que a leitura fosse mais confortável. 
 
 ## . Demonstração
 
