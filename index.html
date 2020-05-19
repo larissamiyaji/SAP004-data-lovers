@@ -20,19 +20,19 @@
 
   <nav class="menu">
     <ul>
-      <button id="about-game" class="style-buttons">
+      <button id="about-game" class="style-buttons for-hover">
         <li>Sobre o Jogo</li>
       </button>
 
-      <button id="show-champions" class="style-buttons">
+      <button id="show-champions" class="style-buttons for-hover">
         <li>Campeões</li>
       </button>
 
-      <button id="compare-champ-but" class="style-buttons">
+      <button id="compare-champ-but" class="style-buttons for-hover">
         <li>Dados</li>
       </button>
 
-      <button id="but-youtube" class="style-buttons">
+      <button id="but-youtube" class="style-buttons for-hover">
         <li>Youtube</li>
       </button>
     </ul>
@@ -42,7 +42,7 @@
     <main>
       <div id="lol-tool-intro" class="style-view">
         <h1>League of Legends Tool</h1>
-        <p>O League of Legends Tool é um site que reúne as informações mais importantes
+        <p class="for-background-text">O League of Legends Tool é um site que reúne as informações mais importantes
           e mais requisitadas pelas jogadoras do, tão famoso, League of Legends. Aqui é possível
           encontrar desde informações mais básicas sobre cada um dos Campeões, até
           informações sobre youtubers mulheres que também são jogadoras de League of Legends.</p>
@@ -52,7 +52,7 @@
 
   <section id="about-the-game-div" class="style-view insivible-class">
     <h1>Sobre o Jogo</h1>
-    <p>League of Legends é um jogo de estratégia em que duas equipes de cinco
+    <p class="for-background-text">League of Legends é um jogo de estratégia em que duas equipes de cinco
       poderosos Campeões se enfrentam para destruir a base uma da outra. Escolha
       entre mais de 140 Campeões para realizar jogadas épicas, assegurar abates
       e destruir torres conforme você luta até a vitória.</p>
@@ -71,6 +71,20 @@
         </label>
       </div>
 
+<<<<<<< HEAD
+=======
+    <div id="order-search-buttons">
+      <div id="sort-div">
+        <legend>Select One:</legend>
+        <label>
+          <input id="AZ" type="radio" name="ordination" value="AZ"> A-Z
+        </label>
+        <label>
+          <input id="ZA" type="radio" name="ordination" value="ZA"> Z-A
+        </label>
+      </div>
+
+>>>>>>> da779ac764e0c732280e7621be1e6282bc392586
       <div id="search-div">
         <input type="text" id="search-entry" placeholder="Digite aqui...">
         <button id="search-button">Buscar</button>
@@ -89,7 +103,7 @@
         <option value="magic">Magic</option>
         <option value="difficulty">Difficulty</option>
       </select>
-      <p class="for-display" id="maior-igual-que">maior igual que </p>
+      <p class="for-display" id="greater-than">maior igual que </p>
       <select id="level-of-information" class="for-display" name="level-of-information">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -103,7 +117,7 @@
         <option value="10">10</option>
       </select>
     </div>
-    <button id="see-data-here-button">Mostrar dados</button>
+    <button id="see-data-here-button" class="for-button for-hover">Mostrar dados</button>
     <div id="see-data-here"></div>
     <div id="see-champions-with-corresponding-data"></div>
   </section>

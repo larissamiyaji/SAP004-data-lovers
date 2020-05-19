@@ -82,14 +82,14 @@ function championsInCards(arrayCharactersArg){
   for (let persona of arrayCharactersArg) {
     template += `
     <div class="champions-card">
-    <p class="image-splash"><img class="image common" src="${persona.splash}"></p>
-    <p class="name common">Name: ${persona.name}</p>
-    <p class="title common">${persona.title}</p>
-    <p class="role common">Role: ${persona.tags}</p>
-    <p class="info-champ common">Attack: ${persona.info.attack}</p>
-    <p class="info-champ common">Defense: ${persona.info.defense}</p>
-    <p class="info-champ common">Magic: ${persona.info.magic}</p>
-    <p class="info-champ common">Difficulty: ${persona.info.difficulty}</p>
+    <p class="image-splash"><img class="image common-class-for-information common-class-for-alignment" src="${persona.splash}"></p>
+    <p class="name common-class-for-information common-class-for-alignment">Name: ${persona.name}</p>
+    <p class="title common-class-for-information common-class-for-alignment">${persona.title}</p>
+    <p class="role common-class-for-information">Role: ${persona.tags}</p>
+    <p class="common-class-for-information">Attack: ${persona.info.attack}</p>
+    <p class="common-class-for-information">Defense: ${persona.info.defense}</p>
+    <p class="common-class-for-information">Magic: ${persona.info.magic}</p>
+    <p class="common-class-for-information">Difficulty: ${persona.info.difficulty}</p>
     </div>
     `;
   }
@@ -183,14 +183,14 @@ function showChampionsInCardsForSort(arrayCharactersForShowSort, objectWithOther
         for (let persona of arrayCharactersForSort) {
         template += `
         <div class="champions-card">
-        <p class="image-splash"><img class="image common" src="${objectWithOtherObjectsInside[persona].splash}"></p>
-        <p class="name common">Name: ${persona}</p>
-        <p class="title common">${objectWithOtherObjectsInside[persona].title}</p>
-        <p class="role common">Role: ${objectWithOtherObjectsInside[persona].tags}</p>
-        <p class="info-champ common">Attack: ${objectWithOtherObjectsInside[persona].info.attack}</p>
-        <p class="info-champ common">Defense: ${objectWithOtherObjectsInside[persona].info.defense}</p>
-        <p class="info-champ common">Magic: ${objectWithOtherObjectsInside[persona].info.magic}</p>
-        <p class="info-champ common">Difficulty: ${objectWithOtherObjectsInside[persona].info.difficulty}</p>
+        <p class="image-splash"><img class="image common-class-for-information common-class-for-alignment" src="${objectWithOtherObjectsInside[persona].splash}"></p>
+        <p class="name common-class-for-information common-class-for-alignment">Name: ${persona}</p>
+        <p class="title common-class-for-information common-class-for-alignment">${objectWithOtherObjectsInside[persona].title}</p>
+        <p class="role common-class-for-information">Role: ${objectWithOtherObjectsInside[persona].tags}</p>
+        <p class="common-class-for-information">Attack: ${objectWithOtherObjectsInside[persona].info.attack}</p>
+        <p class="common-class-for-information">Defense: ${objectWithOtherObjectsInside[persona].info.defense}</p>
+        <p class="common-class-for-information">Magic: ${objectWithOtherObjectsInside[persona].info.magic}</p>
+        <p class="common-class-for-information">Difficulty: ${objectWithOtherObjectsInside[persona].info.difficulty}</p>
         </div>
         `;
         }
