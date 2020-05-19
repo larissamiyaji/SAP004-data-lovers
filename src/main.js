@@ -7,8 +7,8 @@ import { searchChampionsByName,
 
 import data from "./data/lol/lol.js";
 
-const champion = data.data; // OBJETO COM VARIOS OBJETOS   { A:{}, D:{}, B:{} }
-const championsArray = Object.values(data.data);  // ARRAY DE OBJETOS  [{},{},{}]
+const champion = data.data;
+const championsArray = Object.values(data.data);
 const charactersDiv = document.getElementById("characters-div");
 const lolToolIntro = document.getElementById("lol-tool-intro");
 const aboutTheGameDiv = document.getElementById("about-the-game-div");
@@ -26,7 +26,7 @@ const userInput = document.getElementById("search-entry");
 aboutGameButton.addEventListener("click", showAboutGame);
 compareChampionButton.addEventListener("click", () => showCompChan(championsArray));
 youtubeButton.addEventListener("click", showYoutubers);
-buttonShowChampions.addEventListener("click", () => showChampionsInCards(championsArray)); // RECEBE ARRAY DE OBJETOS
+buttonShowChampions.addEventListener("click", () => showChampionsInCards(championsArray));
 radioAZ.addEventListener("click", () => showChampionsInCardsForSort(sortCharactersAZ(champion), champion));
 radioZA.addEventListener("click", () => showChampionsInCardsForSort(sortCharactersZA(champion), champion));
 searchButton.addEventListener('click', () => {
@@ -135,7 +135,7 @@ function showCompChan(arraycharacterForAggregateCalculation) {
     }         
 }
 
-function showChampionsInCards(arrayCharacters) {     //MOSTRA PERSONAGENS EM FORMA DE CARDS DENTRO DA CHARACTERS-DIV
+function showChampionsInCards(arrayCharacters) {
   document.getElementById("characters-div").style.visibility = "visible";
   document.getElementById("characters-div").style.display = "block";
 
