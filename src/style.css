@@ -151,9 +151,14 @@ h1 {
 .youtube-info{
   display: block;
 }
-.video{
-  /*padding-left: 100px;*/
+.youtube-info > p{
+  font-size: 20px;
 }
+iframe{
+  height: 230px;
+  width: 500px;
+}
+
 /*VERSÃO MOBILE*/
 @media only screen and (max-width: 800px) {
   html {
@@ -258,6 +263,10 @@ h1 {
     align-items: center;
     padding-top: 0%;
     max-width: 100%;
+  }
+  iframe{
+    height: 200px;
+    width: 300px;
   }
   .made-by {
     text-align: center;
