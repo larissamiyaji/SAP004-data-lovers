@@ -45,4 +45,6 @@ Durante a desenvolvimento do projeto, criamos outro <a href="https://forms.gle/q
 
 A seguir, um breve vídeo com a demonstração de como funciona melhor a navegação do site.
 
-<img src="https://www.youtube.com/watch?v=mQaeHmNLw7c" alt="Demonstração - League Of Legends Tool" data-canonical-src="https://img.youtube.com/vi/utiLWBXmNQU/0.jpg" style="max-width:100%;">
+<a href="https://www.youtube.com/watch?v=mQaeHmNLw7c" rel="nofollow">
+    <img src="https://camo.githubusercontent.com/d1f89020db4183fc3e1a81556e1dca598600cfda/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f7574694c5742586d4e51552f302e6a7067" alt="Dicas Cifra de César" data-canonical-src="https://img.youtube.com/vi/utiLWBXmNQU/0.jpg" style="max-width:100%;">
+</a>
