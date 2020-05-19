@@ -4,7 +4,7 @@
 * [1. Prefácio](#1-prefácio)
 * [2. Nosso Propósito](#2-nosso-propósito)
 * [3. Histórias de Usuário](#3-histórias-de-usuário)
-* [4. Protótipo de Baixa Fidelidade](#4-protótipo)
+* [4. Protótipo de Baixa Fidelidade](#4-protótipo-de-baixa-fidelidade)
 * [5. Teste de Usabilidade](#5-teste-de-usabilidade)
 * [6. Demonstração](#6-demonstração)
 
